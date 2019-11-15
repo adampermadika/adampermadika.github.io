@@ -1,0 +1,227 @@
+/* body */
+
+body {
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+
+/* navbar */
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-left: 10px;
+    font-family: viga;
+}
+
+.navbar img {
+    width: 15%;
+}
+
+
+/* judul */
+
+.judul {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 1%;
+    background-color: white;
+    padding: 15px;
+    height: 250px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.gambar img {
+    width: 100%;
+}
+
+.txt h5 {
+    text-align: center;
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-family: viga;
+    margin-top: -195px;
+    font-size: 100%;
+}
+
+.gambar2 {
+    width: 25%;
+    position: relative;
+    margin-top: -290px;
+    margin-left: 145px;
+}
+
+
+/* deskripsi */
+
+.deskripsi {
+    background-color: oldlace;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    font-family: arial;
+}
+
+.teks-deskripsi li {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+
+/* materi */
+
+.materi {
+    background-color: oldlace;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 15px;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    font-family: arial;
+}
+
+.kode-heading {
+    font-size: 16px;
+    font-family: arial;
+}
+
+.kode-heading span {
+    color: rgb(41, 17, 253);
+}
+
+
+/* struktur html */
+
+.struktur-html pre {
+    font-size: 17px;
+}
+
+.materi-list {
+    font-size: 17px;
+}
+
+
+/* info tugas */
+
+.container-tugas {
+    background-color: oldlace;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 15px;
+    height: auto;
+    width: 50%;
+    margin-left: 10%;
+    font-family: arial;
+}
+
+hr {
+    width: 210px;
+    float: left;
+    margin-top: -1px;
+    border-top: 2px solid #030107;
+}
+
+
+/* coment */
+
+.coment {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    padding: 20px;
+    border-radius: 12px;
+    font-family: arial;
+}
+
+.btn {
+    width: 20%;
+    float: right;
+    display: block;
+}
+
+
+/* Footer */
+
+footer {
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    background-color: darkgrey;
+    padding-top: 0px;
+}
+
+footer p {
+    color: #eeeeee;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+    /* navbar */
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        margin-left: 10px;
+        font-family: viga;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 5px;
+        font-family: viga;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(177, 177, 247);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .navbar img {
+        width: 8%;
+    }
+    .judul {
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        margin-top: 1%;
+        background-color: white;
+        padding: 15px;
+        height: 490px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .gambar img {
+        width: 100%;
+        height: 470px;
+    }
+    .txt h5 {
+        text-align: center;
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        font-family: viga;
+        margin-top: -430px;
+        font-size: 30px;
+    }
+    .gambar2 {
+        width: 25%;
+        position: relative;
+        margin-top: -490px;
+        margin-left: 385px;
+    }
+}

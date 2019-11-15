@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="tugas-1.css" type="text/css">
+    <link rel="icon" href="../img/icon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+
+    <title>Sistem Operasi</title>
+</head>
+
+<body>
+
+    <!-- awal navbar -->
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary nav-border">
+            <img src="../img/icon.png" alt="icon">
+            <p class="navbar-brand mt-3">Sistem Operasi</p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="nav-text ml-auto">
+                    <ul class="navbar-nav mr-2">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Beranda<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#info-tugas">Informasi Tugas<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html#contact">Kontak<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html#about">Tentang<span class="sr-only">(current)</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- akhir navbar -->
+
+    <!-- awal judul -->
+    <section class="judul" id="judul">
+
+        <div class="container">
+            <div class="row">
+                <div class="col ">
+                    <div class="gambar txt">
+                        <img src="img/bg-judul.png" alt="">
+                        <h5 class="display-4">Sistem Operasi <br><br><br><br><br><br><br>Oleh: Ibu Yulianingsih <br>Semester Ganjil <br>X5G</h5>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/icon.png" alt="" class="gambar2">
+        </div>
+    </section>
+
+    <!-- akhir judul -->
+
+    <!-- awal deskripsi -->
+    <section class="deskripsi" id="deskripsi">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="teks-deskripsi">
+                        <ul>
+                            <li>
+                                <b><u> Deskripsi Mata Kuliah</u></b>
+                            </li>
+                            <p>Matakuliah sistem operasi komputer adalah matakuliah yang wajib diikuti oleh mahasiswa teknik informasika, sistem informasi. Matakuliah ini menjabarkan tentang konsep-konsep dasar dalam memahami sistem operasi komputer. Penyajian
+                                materi dari kuliah ini dimulai dengan pengenalan sistem komputer, struktur sistem operasi komputer, proses dan thread, cpu scheduling, sinkronisasi, deadlock, managemen memori dan media penyimpan, serta sistem proteksi
+                                dan sekuriti, dan diakhiri dengan studi kasus tentang sistem operasi DOS (Disk Operating Sistem).
+                            </p>
+                            <li>
+                                <b><u> Kompentensi Mahasiswa</u></b>
+                            </li>
+                            <p>Mahasiswa dapat mengerti tentang struktur sistem operasi komputer, proses dan thread, cpu scheduling, sinkronisasi, managemen memori dan media penyimpan serta system sekuriti dalam perancangan sebuah sistem operasi komputer.
+                            </p>
+                            <li>
+                                <b><u> Materi Pembahasan</u></b>
+                                <div class="mp">
+                                    <ol>
+                                        <a href="#sistem-komputer">
+                                            <li> Pengenalan Sistem Komputer</li>
+                                        </a>
+                                        <a href="#sistem-operasi">
+                                            <li> Struktur Sistem Operasi</li>
+                                        </a>
+                                        <a href="#thread">
+                                            <li> Thread</li>
+                                        </a>
+                                        <a href="#cpu-schedule">
+                                            <li> CPU Schedulling</li>
+                                        </a>
+                                        <a href="#sinkron-proses">
+                                            <li> Sinkronisasi Proses</li>
+                                        </a>
+                                        <a href="#lock">
+                                            <li> Deadlock</li>
+                                        </a>
+                                        <a href="#manage-memori">
+                                            <li> Management Memori</li>
+                                        </a>
+                                        <a href="#manage-penyimpanan">
+                                            <li> Management Media Penyimpanan</li>
+                                        </a>
+                                        <a href="#manage-io">
+                                            <li> Management Sistem I/O ( Input Output)</li>
+                                        </a>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- akhir deskripsi -->
+
+    <!-- awal materi SO -->
+    <section class="sistem-komputer" id="sistem-komputer">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Pengenalan Sistem Komputer</u></b>
+                            </li><br>
+                            <p><b>Sistem komputer</b> adalah suatu jaringan elektronik yang terdiri dari <a href="/wiki/Perangkat_lunak" title="Perangkat lunak">perangkat lunak</a> dan <a href="/wiki/Perangkat_keras" title="Perangkat keras">perangkat keras</a>                                yang melakukan tugas tertentu (menerima <i>input</i>, memproses <i>input</i>, menyimpan perintah-perintah, dan menyediakan <i>output</i> dalam bentuk informasi). Selain itu dapat pula diartikan sebagai elemen-elemen yang
+                                terkait untuk menjalankan suatu aktivitas dengan menggunakan komputer.
+                            </p>
+                            <p>Komputer dapat membantu manusia dalam pekerjaan sehari-harinya, pekerjaan itu seperti: pengolahan kata, pengolahan angka, dan pengolahan gambar.
+                            </p>
+                            <p>Elemen dari sistem komputer terdiri dari manusianya (<i>brainware</i>), perangkat lunak (<i>software</i>), set instruksi (<i>instruction set</i>), dan perangkat keras (<i>hardware</i>). Dengan demikian komponen tersebut merupakan
+                                elemen yang terlibat dalam suatu sistem komputer.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sistem-operasi" id="sistem-operasi">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Struktur Sistem Operasi</u></b>
+                            </li><br>
+                            <p style="text-align:justify;">Secara umum, Sistem Operasi adalah software pada lapisan pertama yang ditempatkan pada <a title="Memori" href="http://id.wikipedia.org/wiki/Memori">memori</a> <a href="http://id.wikipedia.org/wiki/Komputer">komputer</a> pada
+                                saat komputer dinyalakan. Sedangkan software-software lainnya dijalankan setelah Sistem Operasi berjalan, dan Sistem Operasi akan melakukan layanan inti umum untuk software-software itu. Layanan inti umum tersebut seperti
+                                akses ke disk, manajemen memori, skeduling task, dan antar-muka user. Sehingga masing-masing software tidak perlu lagi melakukan tugas-tugas inti umum tersebut, karena dapat dilayani dan dilakukan oleh Sistem Operasi. Bagian
+                                kode yang melakukan tugas-tugas inti dan umum tersebut dinamakan dengan &#8220;<a title="Kernel (Ilmu komputer)" href="http://id.wikipedia.org/wiki/Kernel_%28Ilmu_komputer%29">kernel</a>&#8221; suatu Sistem Operasi.</p>
+                            <p style="text-align:justify;">Kalau sistem komputer terbagi dalam lapisan-lapisan, maka Sistem Operasi adalah penghubung antara lapisan hardware dan lapisan software. Lebih jauh daripada itu, Sistem Operasi melakukan semua tugas-tugas penting dalam komputer,
+                                dan menjamin aplikasi-aplikasi yang berbeda dapat berjalan secara bersamaan dengan lancar. Sistem Operasi menjamin aplikasi software lainnya dapat menggunakan memori, melakukan input dan output terhadap peralatan lain dan
+                                memiliki akses kepada sistem file. Apabila beberapa aplikasi berjalan secara bersamaan, maka Sistem Operasi mengatur skedule yang tepat, sehingga sedapat mungkin semua proses yang berjalan mendapatkan waktu yang cukup untuk
+                                menggunakan prosesor (CPU) serta tidak saling mengganggu.<span id="more-11"></span></p>
+
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <ol style="text-align:justify;">
+                                <li><strong>STRUKTUR SISTEM OPERASI</strong></li>
+                            </ol>
+                            <p style="text-align:justify;">Sebuah sistem yang besar dan kompleks seperti sistem operasi modern harus diatur dengan cara membagi task kedalam komponen-komponen kecil agar dapat berfungsi dengan baik dan mudah.</p>
+                            <p style="text-align:justify;">Brikut ini adalah Struktur Sistem Operasi;</p>
+                            <ul style="text-align:justify;">
+                                <li><em>Struktur      Sederhana</em><em> </em></li>
+                                <li>Sistem Berlapis (layered system)</li>
+                                <li>Kernel Mikro</li>
+                                <li><em>Modular      (Modules)</em><em> </em></li>
+                                <li>Mesin Maya<em> </em><em>(</em><em> Virtual Machine</em><em> )</em><em> </em></li>
+                                <li>Client-Server Model</li>
+                                <li>Sistem Berorientasi Objek</li>
+                            </ul>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><em><strong>1. </strong></em><em><strong>Struktur Sederhana</strong></em><em><strong> </strong></em></p>
+                            <p style="text-align:justify;">Sistem operasi sebagai kumpulan prosedur dimana prosedur dapat saling dipanggil oleh prosedur lain di sistem bila diperlukan. Banyak sistem operasi komersial yang tidak terstruktur dengan baik. Kemudian sistem operasi dimulai
+                                dari yang terkecil, sederhana dan terbatas lalu berkembang dengan ruang lingkup originalnya. Contoh dari sistem operasi ini adalah MS-DOS dan UNIX. MS-DOS merupakan sistem operasi yang menyediakan fungsional dalam ruang
+                                yang sedikit sehingga tidak dibagi menjadi beberapa modul, sedangkan UNIX menggunakan struktur <em>monolitik</em><strong><em> </em></strong>dimana prosedur dapat saling dipanggil oleh prosedur lain di sistem bila diperlukan
+                                dan kernel berisi semua layanan yang disediakan sistem operasi untuk pengguna. Inisialisasi-nya terbatas pada fungsional perangkat keras yang terbagi menjadi dua bagian yaitu kernel dan sistem program. Kernel terbagi menjadi
+                                serangkaian interface dan device driver dan menyediakan sistem file, penjadwalan CPU, manajemen memori, dan fungsi-fungsi sistem operasi lainnya melalui system calls.</p>
+                            <p style="text-align:justify;"><strong>Kelebihan Struktur Sederhana:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Layanan dapat dilakukan sangat cepat karena terdapat di satu ruang alamat.<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kekurangan Struktur Sederhana:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Pengujian dan penghilangan kesalahan sulit karena tidak dapat dipisahkan dan dilokalisasi.</li>
+                                <li>Sulit dalam menyediakan fasilitas pengamanan.</li>
+                                <li>Merupakan pemborosan bila setiap komputer harus menjalankan kernel monolitik sangat besar sementara sebenarnya tidak memerlukan seluruh layanan yang disediakan kernel.</li>
+                                <li>Tidak fleksibel.</li>
+                                <li>Kesalahan pemograman satu bagian dari kernel menyebabkan matinya seluruh sistem.</li>
+                            </ul>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><em> </em></p>
+                            <p style="text-align:justify;"><em> </em></p>
+                            <p style="text-align:justify;"><strong>Evolusi :</strong><strong> </strong></p>
+                            <p style="text-align:justify;">Kebanyakan UNIX sampai saat ini berstruktur monolitik. Meskipun monolitik, yaitu seluruh komponen/subsistem sistem operasi terdapat di satu ruang alamat tetapi secara rancangan adalah berlapis. Rancangan adalah berlapis yaitu
+                                secara logik satu komponen/subsistem merupakan lapisan lebih bawah dibanding lainnya dan menyediakan layanan-layanan untuk lapisan-lapisan lebih atas. Komponen-komponen tersebut kemudia dikompilasi dan dikaitkan (di-link)
+                                menjadi satu ruang alamat. Untuk mempermudah dalam pengembangan terutama pengujian dan fleksibilitas, kebanyakan UNIX saat ini menggunakan konsep kernel loadable modules,yaitu:</p>
+                            <ul style="text-align:justify;">
+                                <li>Bagian-bagian kernel terpenting berada di memori utama secara tetap.</li>
+                                <li>Bagian-bagian esensi lain berupa modul yang dapat ditambahkan ke kernel saat diperlukan dan dicabut begitu tidak digunakan lagi di waktu jalan (run time).</li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Contoh</strong> : UNIX berstruktur monolitik, MS-DOS<strong> </strong></p>
+                            <p style="text-align:justify;"><strong> </strong></p>
+                            <p style="text-align:justify;"><strong>2. </strong><strong>Sistem </strong><strong>Berlapis (layered system)</strong><strong> </strong></p>
+                            <p style="text-align:justify;">Sistem operasi dibentuk secara hirarki berdasar lapisan-lapisan, dimana lapisan-lapisan bawa memberi layanan lapisan lebih atas. Lapisan yang paling bawah adalah perangkat keras, dan yang paling tinggi adalah user-interface.
+                                Sebuah lapisan adalah implementasi dari obyek abstrak yang merupakan enkapsulasi dari data dan operasi yang bisa memanipulasi data tersebut. Struktur berlapis dimaksudkan untuk mengurangi kompleksitas rancangan dan implementasi
+                                sistem operasi. Tiap lapisan mempunyai fungsional dan antarmuka masukan-keluaran antara dua lapisan bersebelahan yang terdefinisi bagus.</p>
+                            <p style="text-align:justify;">Sedangkan menurut Tanenbaum dan Woodhull, sistem terlapis terdiri dari enam lapisan, yaitu:</p>
+                            <p style="text-align:justify;">Lapis 5 &#8211; The operator</p>
+                            <p style="text-align:justify;">Berfungsi untuk pemakai operator.</p>
+                            <p style="text-align:justify;">Lapis 4 &#8211; User programs</p>
+                            <p style="text-align:justify;">Berfungsi untuk aplikasi program pemakai.</p>
+                            <p style="text-align:justify;">Lapis 3 &#8211; I/O management</p>
+                            <p style="text-align:justify;">Berfungsi untuk menyederhanakan akses I/O pada level atas.</p>
+                            <p style="text-align:justify;">Lapis 2 -Operator-operator communication</p>
+                            <p style="text-align:justify;">Berfungsi untuk mengatur komunikasi antar proses.</p>
+                            <p style="text-align:justify;">Lapis 1 -Memory and drum management</p>
+                            <p style="text-align:justify;">Berfungsi untuk mengatur alokasi ruang memori atau drum magnetic.</p>
+                            <p style="text-align:justify;">Lapis 0 -Processor allocation and multiprogramming</p>
+                            <p style="text-align:justify;">Berfungsi untuk mengatur alokasi pemroses dan switching, multi programming dan pengaturan prosessor.</p>
+                            <p style="text-align:justify;">Menurut Stallings, model tingkatan sistem operasi yang mengaplikasikan prinsip ini dapat dilihat pada tabel berikut, yang terdiri dari level-level dibawah ini:</p>
+                            <ul>
+                                <li> Level 1</li>
+                            </ul>
+                            <p style="text-align:justify;">Terdiri dari sirkuit elektronik dimana obyek yang ditangani adalah register memory cell, dan gerbang logika. Operasi pada obyek ini seperti membersihkan register atau membaca lokasi memori.</p>
+                            <ul>
+                                <li> Level 2</li>
+                            </ul>
+                            <p style="text-align:justify;">Pada level ini adalah set instruksi pada prosesor. Operasinya adalah instruksi bahasa-mesin, seperti menambah, mengurangi, load dan store.</p>
+                            <ul>
+                                <li> Level 3</li>
+                            </ul>
+                            <p style="text-align:justify;">Tambahan konsep prosedur atau subrutin ditambah operasi call atau return.</p>
+                            <ul>
+                                <li> Level 4</li>
+                            </ul>
+                            <p style="text-align:justify;">Mengenalkan interupsi yang menyebabkan prosesor harus menyimpan perintah yang baru dijalankan dan memanggil rutin penanganan interupsi. Empat level pertama bukan bagian sistem operasi tetapi bagian perangkat keras. Meski pun
+                                demikian beberapa elemen sistem operasi mulai tampil pada level-level ini, seperti rutin penanganan interupsi. Pada level 5, kita mulai masuk kebagian sistem operasi dan konsepnya berhubungan dengan multi-programming.</p>
+                            <ul>
+                                <li> Level 5</li>
+                            </ul>
+                            <p style="text-align:justify;">Level ini mengenalkan ide proses dalam mengeksekusi program. Kebutuhan-kebutuhan dasar pada sistem operasi untuk mendukung proses ganda termasuk kemampuan men-suspend dan me-resume proses. Hal ini membutuhkan register perangkat
+                                keras untuk menyimpan agar eksekusi bisa ditukar antara satu proses ke proses lainnya.</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <ul>
+                                <li> Level 6</li>
+                            </ul>
+                            <p style="text-align:justify;">Mengatasi penyimpanan sekunder dari komputer. Level ini untuk menjadualkan operasi dan menanggapi permintaan proses dalam melengkapi suatu proses.</p>
+                            <ul>
+                                <li> Level 7</li>
+                            </ul>
+                            <p style="text-align:justify;">Membuat alamat logik untuk proses. Level ini mengatur alamat virtual ke dalam blok yang bisa dipindahkan antara memori utama dan memori tambahan. Cara-cara yang sering dipakai adalah menggunakan ukuran halaman yang tetap, menggunakan
+                                segmen sepanjang variabelnya, dan menggunakan cara keduanya. Ketika blok yang dibutuhkan tidak ada dimemori utama, alamat logis pada level ini meminta transfer dari level 6. Sampai point ini, sistem operasi mengatasi sumber
+                                daya dari prosesor tunggal. Mulai level 8, sistem operasi mengatasi obyek eksternal seperti peranti bagian luar, jaringan, dan sisipan komputer kepada jaringan.</p>
+                            <p style="text-align:justify;">Ø Level 8</p>
+                            <p style="text-align:justify;">Mengatasi komunikasi informasi dan pesan-pesan antar proses. Dimana pada level 5 disediakan mekanisme penanda yang kuno yang memungkinkan untuk sinkronisasi proses, pada level ini mengatasi pembagian informasi yang lebih banyak.
+                                Salah satu peranti yang paling sesuai adalah pipe (pipa) yang menerima output suatu proses dan memberi input ke proses lain.</p>
+                            <ul>
+                                <li> Level 9</li>
+                            </ul>
+                            <p style="text-align:justify;">Mendukung penyimpanan jangka panjang yang disebut dengan berkas. Pada level ini, data dari penyimpanan sekunder ditampilkan pada tingkat abstrak, panjang variabel yang terpisah. Hal nini bertentangan tampilan yang berorientasikan
+                                perangkat keras dari penyimpanan sekunder.</p>
+                            <ul>
+                                <li>Level 10</li>
+                            </ul>
+                            <p style="text-align:justify;">Menyediakan akses ke peranti eksternal menggunakan antarmuka standar.</p>
+                            <ul>
+                                <li>Level 11</li>
+                            </ul>
+                            <p style="text-align:justify;">Bertanggung-jawab mempertahankan hubungan antara internal dan eksternal identifier dari sumber daya dan obyek sistem. Eksternal identifier adalah nama yang bisa dimanfaatkan oleh aplikasi atau pengguna. Internal identifier
+                                adalah alamat atau indikasi lain yang bisa digunakan oleh level yang lebih rendah untuk meletakkan dan mengontrol obyek.</p>
+                            <ul>
+                                <li> Level 12</li>
+                            </ul>
+                            <p style="text-align:justify;">Menyediakan suatu fasilitator yang penuh tampilan untuk mendukung proses. Hal ini merupakan lanjutan dari yang telah disediakan pada level 5. Pada level 12, semua info yang dibutuhkan untuk managemen proses dengan berurutan
+                                disediakan, termasuk alamat virtual di proses, daftar obyek dan proses yang berinteraksi dengan proses tersebut serta batasan interaksi tersebut, parameter yang harus dipenuhi proses saat pembentukan, dan karakteristik
+                                lain yang mungkin digunakan sistem operasi untuk mengontrol proses.</p>
+                            <ul>
+                                <li>Level 13</li>
+                            </ul>
+                            <p style="text-align:justify;">Menyediakan antarmuka dari sistem operasi dengan pengguna yang dianggap sebagai shell atau dinding karena memisahkan pengguna dengan sistem operasi dan menampilkan sistem operasi dengan sederhana sebagai kumpulan servis atau
+                                pelayanan.
+                            </p>
+                            <p style="text-align:justify;">Dari ketiga sumber diatas dapat kita simpulkan bahwa lapisan sistem operasi secara umum terdiri atas 4 bagian, yaitu:</p>
+                            <ol style="text-align:justify;">
+                                <li>Perangkat keras</li>
+                            </ol>
+                            <p style="text-align:justify;">Lebih berhubungan kepada perancang sistem. Lapisan ini mencakup lapisan 0 dan 1 menurut Tanenbaum, dan level 1 sampai dengan level 4 menurut Stallings.</p>
+                            <ol style="text-align:justify;">
+                                <li>Sistem operasi</li>
+                            </ol>
+                            <p style="text-align:justify;">Lebih berhubungan kepada programer. Lapisan ini mencakup lapisan 2 menurut Tanenbaum, dan level 5 sampai dengan level 7 menurut Stallings.</p>
+                            <ol style="text-align:justify;">
+                                <li>Kelengkapan</li>
+                            </ol>
+                            <p style="text-align:justify;">Lebih berhubungan kepada programer. Lapisan ini mencakup lapisan 3 menurut Tanenbaum, dan level 8 sampai dengan level 11 menurut Stallings.</p>
+                            <ol style="text-align:justify;">
+                                <li>Program aplikasi</li>
+                            </ol>
+                            <p style="text-align:justify;">Lebih berhubungan kepada pengguna aplikasi komputer. Lapisan ini mencakup lapisan 4 dan lapisan 5 menurut Tanebaum, dan level 12 dan level 13 menurut Stallings.</p>
+                            <p style="text-align:justify;">Lapisan n memberi layanan untuk lapisan n+1. Proses-proses di lapisan n dapat meminta layanan lapisan n-1 untuk membangunan layanan bagi lapisan n+1. Lapisan n dapat meminta layanan lapisan n-1. Kebalikan tidak dapat, lapisan
+                                n tidak dapat meminta layanan n+1. Masing-masing berjalan di ruang alamat-nya sendiri. Kelanjutan sistem berlapis adalah sistem berstruktur cincin seperti sistem MULTICS. Sistem MULTICS terdiri 64 lapisan cincin dimana
+                                satu lapisan berkewenangan berbeda. Lapisan n-1 mempunyai kewenangan lebih dibanding lapisan n. Untuk meminta layanan lapisan n-1, lapisan n melakukan trap. Kemudian, lapisan n-1 mengambil kendali sepenuhnya untuk melayani
+                                lapisan n.</p>
+                            <p style="text-align:justify;"><strong>Kelebihan Sistem </strong><strong>Berlapis (layered system)</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Memiliki rancangan modular, yaitu sistem dibagi menjadi beberapa modul &amp; tiap modul dirancang secara independen.</li>
+                                <li>Pendekatan berlapis menyederhanakan rancangan, spesifikasi dan implementasi sistem operasi.</li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kekurangan Sistem </strong><strong>Berlapis (layered system)</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Fungsi-fungsi sistem operasi diberikan ke tiap lapisan secara hati-hati.<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Contoh: </strong>Sistem operasi yang menggunakan pendekatan berlapis adalah THE yang dibuat oleh Djikstra dan mahasiswa-mahasiswanya, serta sistem operasi MULTICS.</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><em><strong>3. </strong></em><strong>Kernel Mikro</strong><em><strong> </strong></em></p>
+                            <p style="text-align:justify;">Metode struktur ini adalah menghilangkan komponen-komponen yang tidak diperlukan dari kernel dan mengimplementasikannya sebagai sistem dan program-program level user. Hal ini akan menghasilkan kernel yang kecil. Fungsi utama
+                                dari jenis ini adalah menyediakan fasilitas komunikasi antara program client dan bermacam pelayanan yang berjalan pada ruang user.</p>
+                            <p style="text-align:justify;"><strong>Kelebihan </strong><strong>Kernel Mikro</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>kemudahan dalam memperluas sistem operasi<strong> </strong></li>
+                                <li>mudah untuk diubah ke bentuk arsitektur baru<strong> </strong></li>
+                                <li>kode yang kecil dan lebih aman<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kekurangan </strong><strong>Kernel Mikro</strong><strong>:</strong><strong> </strong></p>
+                            <ul style="text-align:justify;">
+                                <li>kinerja akan berkurang selagi bertambahnya fungsi-fungsi yang digunakan.</li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Contoh: </strong>sistem operasi yang menggunakan metode ini adalah TRU64 UNIX, MacOSX dan QNX.</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><em><strong>4. </strong></em><em><strong>Modular (Modules)</strong></em><em><strong> </strong></em></p>
+                            <p style="text-align:justify;">Kernel mempunyai kumpulan komponen-komponen inti dan secara dinamis terhubung pada penambahan layanan selama waktu boot atau waktu berjalan. Sehingga strateginya menggunakan pemanggilan modul secara dinamis (<em>Loadable Kernel Modules</em>).
+                                Umumnya sudah diimplementasikan oleh sistem operasi modern seperti Solaris, Linux dan MacOSX.</p>
+                            <p style="text-align:justify;">Sistem Operasi Apple Macintosh Mac OS X menggunakan <strong>struktur</strong><strong> </strong><em>hybrid</em><strong>.</strong> Strukturnya menggunakan teknik berlapis dan satu lapisan diantaranya menggunakan Mach microkernel.</p>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><em><strong>5. </strong></em><strong>Mesin Maya</strong><em><strong> </strong></em><em><strong>(</strong></em><em><strong> Virtual Machine</strong></em><em><strong> )</strong></em><em><strong> </strong></em></p>
+                            <p style="text-align:justify;">Mesin maya mempunyai sistem timesharing yang berfungsi untuk ,menyediakan kemampuan untuk multiprogramming dan perluasan mesin dengan antarmuka yang lebih mudah.</p>
+                            <p style="text-align:justify;">Struktur Mesin maya ( CP/CMS, VM/370 ) terdiri atas komponen dasar utama :</p>
+                            <ul style="text-align:justify;">
+                                <li>Control Program, yaitu virtual machine monitor yang mengatur fungsi ari prosessor, memori dan piranti I/O. Komponen ini berhubungan langsung dengan perangkat keras.</li>
+                                <li>Conventional Monitor System, yaitu sistem operasi sederhanayang mengatur fungsi dari proses, pengelolaan informasi dan pengelolaan piranti.</li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kelebihan Mesin Maya</strong><em><strong> </strong></em><em><strong>(</strong></em><em><strong> Virtual Machine</strong></em><em><strong> )</strong></em><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Konsep mesin virtual menyediakan proteksi yang lengkap untuk sumber daya system sehingga masing-masing mesin virtual dipisahkan mesin virtual yang lain. Isolasi ini tidak memperbolehkan pembagian sumber daya secara langsung.</li>
+                                <li>Sistem mesin virtual adalah mesin yang sempurna untuk riset dan pengembangan system operasi. Pengembangan system dikerjakan pada mesin virtual, termasuk di dalamnya mesin fisik dan tidak mengganggu operasi system yang normal.<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kekurangan Mesin Maya</strong><em><strong> </strong></em><em><strong>(</strong></em><em><strong> Virtual Machine</strong></em><em><strong> )</strong></em><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Konsep mesin virtual sangat sulit untuk mengimplementasikan kebutuhan dan duplikasi yang tepat pada mesin yang sebenarnya.</li>
+                            </ul>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><strong> </strong></p>
+                            <p style="text-align:justify;"><strong>Contoh: </strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Sistem operasi MS-Windows NT dapat menjalankan aplikasi untuk MS-DOS, OS/2 mode teks dan aplikasi WIN16.</li>
+                                <li>IBM mengembangkan WABI untuk meng-emulasikan Win32 API sehingga sistem operasi yang menjalankan WABI dapat menjalankan aplikasi-aplikasi untuk MS-Windows.</li>
+                                <li>Para pengembang Linux membuat DOSEMU untuk menjalankan aplikas-aplikasi DOS pada sistem operasi Linux, WINE untuk menjalankan aplikasi-aplikasi MS-Windows.</li>
+                                <li>VMWare merupakan aplikasi komersial yang meng-abstraksikan perangkat keras intel 80×86 menjadi virtual mesin dan dapat menjalan beberapa sistem operasi lain (<em>guest operating system</em>) di dalam sistem operasi MS-Windos
+                                    atau Linux (<em>host operating system</em>). <strong>VirtualBox</strong><strong> </strong>merupakan salah satu aplikasi sejenis yang opensource.</li>
+                            </ul>
+                            <p style="text-align:justify;">&nbsp;</p>
+                            <p style="text-align:justify;"><em><strong>6. </strong></em><strong>Client-Server Model</strong><em><strong> </strong></em></p>
+                            <p style="text-align:justify;">Mengimplementasikan sebagian besar fungsi sistem operasi pada mode pengguna (user mode). Sistem operasi merupakan kumpulan proses dengan proses-proses dikategorikan sebagai server dan client, yaitu :</p>
+                            <p style="text-align:justify;">Server, adalah proses yang menyediakan layanan.</p>
+                            <p style="text-align:justify;">Client, adalah proses yang memerlukan/meminta layanan.</p>
+                            <p style="text-align:justify;">Proses client yang memerlukan layanan mengirim pesan ke server dan menanti pesan jawaban. Proses server setelah melakukan tugas yang diminta, mengirim hasil dalam bentuk pesan jawaban ke proses client. Server hanya menanggapi
+                                permintaan client dan tidak memulai dengan percakapan client. Kode dapat diangkat ke level tinggi, sehingga kernel dibuat sekecil mungkin dan semua tugas diangkat ke bagian proses pemaka. Kernel hanya mengatur komunikasi
+                                antara client dan server. Kernel yang ini popular dengan sebutan mikrokernel.<em> </em></p>
+                            <p style="text-align:justify;"><strong>Kelebihan Client-Server Model</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Pengembangan dapat dilakukan secara modular.<strong> </strong></li>
+                                <li>Kesalahan (bugs) di satu subsistem (diimplementasikan sebagai satu proses) tidak merusak subsistem-subsistem lain, sehingga tidak mengakibatkan satu sistem mati secara keseluruhan.<strong> </strong></li>
+                                <li>Mudah diadaptasi untuk sistem tersebar.<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kekurangan Client-Server Model</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Layanan dilakukan lambat karena harus melalui pertukaran pesan.<strong> </strong></li>
+                                <li>Pertukaran pesan dapat menjadi bottleneck.<strong> </strong></li>
+                                <li>Tidak semua tugas dapat dijalankan di tingkat pemakai (sebagai proses pemakai).<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong> </strong></p>
+                            <p style="text-align:justify;"><strong>7. </strong><strong>Sistem Berorientasi Objek</strong><strong> </strong></p>
+                            <p style="text-align:justify;">Sisten operasi merealisasikan layanan sebagai kumpulan proses disebut sistem operasi bermodel proses. Pendekatan lain implementasi layanan adalah sebagai objek-objek. Sistem operasu yang distrukturkan menggunakan objek disebut
+                                sistem operasi berorientasi objek. Pendekatan ini dimaksudkan untuk mengadopsi keunggulan teknologi berorientasi objek. Pada sistem yang berorientasi objek, layanan diimplementasikan sebagai kumpulan objek. Objek mengkapsulkan
+                                struktur data dan sekumpulan operasi pada struktur data itu. Tiap objek diberi tipe yang menandadi properti objek seperti proses, direktori, berkas, dan sebagainya. Dengan memanggil operasi yang didefinisikan di objek,
+                                data yang dikapsulkan dapat diakses dan dimodifikasi. Model ini sungguh terstruktur dan memisahkan antara layanan yang disediakan dan implementasinya. Sistem operasi MS Windows NT telah mengadopsi beberapa teknologi berorientasi
+                                objek tetapi belum keseluruhan.</p>
+                            <p style="text-align:justify;"><strong>Kelebihan Sistem Berorientasi Objek</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Terstruktur dan memisahkan antara layanan yang disediakan dan implementasinya.<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Kekurangan Sistem Berorientasi Objek</strong><strong>:</strong></p>
+                            <ul style="text-align:justify;">
+                                <li>Sistem operasi MS Windows NT telah mengadopsi beberapa teknologi berorientasi objek tetapi belum keseluruhan.<strong> </strong></li>
+                            </ul>
+                            <p style="text-align:justify;"><strong>Contoh </strong>sistem operasi yang berorientasi objek, antara lain : eden, choices, x-kernel, medusa, clouds, amoeba, muse, dan sebagainya.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="thread" id="thread">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Thread</u></b>
+                            </li><br>
+                            <p><strong>1.Thread</strong></p>
+                            <ul>
+                                <li>Thread adalah unit terkecil dalam suatu proses yang bisa dijadwalkan oleh sistem operasi.</li>
+                                <li>Merupakan sebuah status eksekusi (ready, running, suspend, block, queue, dll)</li>
+                                <li>Kadang disebut sebagai proses ringan (lightweight).</li>
+                                <li>Unit dasar dari dari sistem utilisasi pada processor (CPU).</li>
+                                <li>Dalam thread terdapat: ID Thread, Program Counter, Register dan Stack.</li>
+                                <li>Sebuah thread berbagi code section, data section dan resource sistem operasi dengan thread yang lain yang memiliki proses yang sama.</li>
+                            </ul>
+                            <p><strong>2.Single-Threading dan Multi-Threading Single</strong></p>
+                            <p><em>Threading</em> adalah sebuah lightweight process (proses sederhana) yang mempunyai thread tunggal yang berfungsi sebagai pengendali/ controller. <em>Multi-Threading</em> adalah proses dengan thread yang banyak dan mengerjakan
+                                lebih dari satu tugas dalam satu waktu.</p>
+                            <p><strong>3. Keuntungan Multi-Threading</strong><span id="more-45"></span></p>
+                            <ol>
+                                <li><em>Responsive</em>; tanggap:<em> Multi-Threading</em> mengizinkan program untuk berjalan terus walau-pun pada bagian program tersebut di block atau sedang dalam keadaan menjalankan operasi yang lama/ panjang. Sebagai contoh,
+                                    multithread web browser dapat mengizinkan pengguna berinteraksi dengan suatu thread ketika suatu gambar sedang diload oleh thread yang lain.</li>
+                                <li><em>Pembagian sumber daya</em>: Secara default, thread membagi memori dan sumber daya dari proses.Ketika thread berjalan pada data yang sama, thread tersebut bisa berbagi cache memory.</li>
+                                <li><em>Ekonomis</em>: Mengalokasikan memori dan sumber daya untuk membuat proses adalah sangat mahal. Alternatifnya, karena thread membagi sumber daya dari proses, ini lebih ekonomis untuk membuat threads.</li>
+                                <li><em>Pemberdayaan arsitektur multiprosesor</em>: Keuntungan dari multi-threading dapat ditingkatkan dengan arsitektur multiprosesor, dimana setiap thread dapat jalan secara paralel pada prosesor yang berbeda. Pada arsitektur
+                                    prosesor tunggal, CPU biasanya berpindah-pindah antara setiap thread dengan cepat, sehingga terdapat ilusi paralelisme, tetapi pada kenyataannya hanya satu thread yang berjalan di setiap waktu.</li>
+                            </ol><br>
+                            <p><strong>4. Kerugian Multi-Threading</strong></p>
+                            <ol>
+                                <li>Multiple thread bisa mengganggu satu sama lain saat berbagi hardware resource, misalnya chace memory.</li>
+                                <li>Execution time (waktu proses) dari sebuah single-thread tidak dapat diimprove (ditambah), tapi malah bisa diturunkan. Ini terjadi karena penurunan frequensi yang dibutuhkan ketika terjadi pergantian thread yang berjalan.</li>
+                                <li>Harus ada dukungan dari hardware ataupun software untuk melakukan multi-Threading.</li>
+                            </ol><br>
+
+                            <p><strong>5. Model-Model Threading</strong></p>
+                            <ol>
+                                <li>Kernel-level threading; thread ini dibuat oleh pengguna yang berkorespondensi 1-1 dengan entitas-entitas yang terjadwalkan yang berada di kernel. Ini merupakan implementasi (penerapaan) paling sederhana dari threading.</li>
+                            </ol>
+                            <ul>
+                                <li>Thread kernel didukung langsung oleh sistem operasi.</li>
+                                <li>Pembuatan, penjadwalan, dan manajemen thread dilakukan oleh kernel pada kernel space.</li>
+                                <li>Pengaturan thread dilakukan oleh sistem operasi, sehingga pembuatan dan pengaturan kernel thread lebih lambat dibandingkan user thread.</li>
+                            </ul>
+                            <p>2. User-level threading; sebuah pemetaan N-1, yang berarti bahwa semua level aplikasi thread dipetakan ke entitas tunggal yang ada di kernel. Dengan pendekatan ini, switching proses dapat dilakukan dengan sangat cepat.</p>
+                            <ul>
+                                <li>Thread pengguna didukung kernel serta diimplementasikan dengan pustaka (library) thread pada tingkatan pengguna.</li>
+                                <li>Pustaka (library) menyediakan fasilitas untuk pembuatan thread, penjadwalan thread, dan manajemen thread tanpa dukungan dari kernel.</li>
+                                <li>Semua pembuatan dan penjadwalan thread dilakukan dalam ruang pengguna tanpa campur tangan kernel.</li>
+                            </ul><br>
+                            <p><strong>6. Thread dalam Sistem Operasi</strong></p>
+                            <ul>
+                                <li>Sistem operasi telah mendukung proses multithreading.</li>
+                                <li>Setiap sistem operasi memiliki konsep tersendiri dalam pengimplementasiannya.</li>
+                                <li>Sistem operasi dapat mendukung thread pada tingkatan kernel maupun tingkatan pengguna.</li>
+                            </ul><br>
+                            <ol>
+                                <li><em><strong>Model Multi-Threading</strong></em></li>
+                                <p>a. Many-to-One </p>
+                                <ul>
+                                    <li>Memetakan beberapa thread tingkatan pengguna</li>
+                                    <li>ke sebuah thread tingkatan kernel.</li>
+                                    <li>Pengaturan thread dilakukan dalam ruang</li>
+                                    <li>pengguna, sehingga efisien.</li>
+                                    <li>Hanya satu thread pengguna yang dapat</li>
+                                    <li>mengakses thread kernel pada satu saat.</li>
+                                </ul><br>
+                                <p>b. One-to-One</p>
+                                <ul>
+                                    <li>Memetakan setiap thread tingkatan pengguna ke thread kernel.</li>
+                                    <li>Model ini menyediakan lebih banyak concurrency dibandingkan model Many-to-One.</li>
+                                    <li>D3 KomSI UGM Sistem Operasi</li>
+                                </ul>
+                                <p>c. Many-to-Many</p>
+                                <ul>
+                                    <li>Mengelompokkan banyak thread pengguna untuk dipetakan ke thread kernel yang</li>
+                                    <li>jumlahnya lebih sedikit atau sama dengan tingkatan pengguna.</li>
+                                    <li>Mengijinkan sistem operasi untuk membuat sejumlah thread kernel.</li>
+                                </ul><br>
+                                <p><strong>7. Cancellation</strong></p>
+                                <p>Thread cancellation ialah pemberhentian thread sebelum tugasnya selesai. Umpama, jika dalam program Java hendak mematikan Java Virtual Machine (JVM). Sebelum JVM dimatikan, maka seluruh thread yang berjalan harus dihentikan
+                                    terlebih dahulu. Thread yang akan diberhentikan biasa disebut target thread.Pemberhentian target thread dapat terjadi melalui dua cara yang berbeda:Asynchronous cancellation: suatu thread seketika itu juga memberhentikan
+                                    target thread.</p>
+                                <p>Defered cancellation: target thread secara perodik memeriksa apakah dia harus berhenti, cara ini memperbolehkan target thread untuk memberhentikan dirinya sendiri secara terurut.</p>
+                                <p>Alternatifnya adalah dengan menggunakan deffered cancellation. Cara kerja dari deffered cancellation adalah dengan menggunakan satu thread yang berfungsi sebagai pengindikasi bahwa target thread hendak diberhentikan. Tetapi
+                                    pemberhentian hanya akan terjadi jika target thread memeriksa apakah ia harus berhenti atau tidak. Hal ini memperbolehkan thread untuk memeriksa apakah ia harus berhenti pada waktu dimana ia dapat diberhentikan secara
+                                    aman yang aman. Pthread merujuk tersebut sebagai cancellation points.</p>
+                                <p><strong>8.Threads Pools</strong></p>
+                                <p>Pada web server yang multithreading ada dua masalah yang timbul:Ukuran waktu yang diperlukan untuk menciptakan thread untuk melayani permintaan yang diajukan terlebih pada kenyataannya thread dibuang ketika ia seketika
+                                    sesudah ia menyelesaikan tugasnya.Pembuatan thread yang tidak terbatas jumlahnya dapat menurunkan performa dari sistem.Solusinya adalah dengan penggunaan Thread Pools, cara kerjanya adalah dengan membuat beberapa thread
+                                    pada proses startup dan menempatkan mereka ke pools, dimana mereka duduk diam dan menunggu untuk bekerja. Jadi ketika server menerima permintaan maka maka ia akan membangunkan thread dari pool dan jika thread tersedia
+                                    maka permintaan tersebut akan dilayani.Ketika thread sudah selesai mengerjakan tugasnya maka ia kembali ke pool dan menunggu pekerjaan lainnya. Bila tidak thread yang tersedia pada saat dibutuhkan maka server menunggu
+                                    sampai ada satu thread yang bebas.</p>
+                                <p><strong>9. Keuntungan thread pool:</strong></p>
+                                <p>Biasanya lebih cepat untuk melayani permintaan dengan thread yang ada dibanding dengan menunggu thread baru dibuat.Thread pool membatasi jumlah thread yang ada pada suatu waktu. Hal ini pentingpada sistem yang tidak dapat
+                                    mendukung banyak thread yang berjalan secara concurrent.</p>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cpu-schedule" id="cpu-schedule">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> CPU Schedulling</u></b>
+                            </li><br>
+                            <p>Penjadwalan CPU adalah (CPU scheduling) adalah suatu pengaturan proses-proses yang ada dalam cpu. Penjadwalan ini sangatlah penting karena menentukan performa dari sebuah cpu. Penjadwalan cpu adalah dasar dari multiprogramming
+                                karena dengan adalnya alokasi itu maka proses-proses itu mendapatkan alokasi resource dari CPU.</p>
+                            <ol type="A">
+                                <b><li>
+                                    SIKLUS BRUST CPU-M/K
+                                </li></b><br>
+                                <p>Keberhasilan dari penjadwalan CPU tergantung dari beberapa properti prosesor. Pengeksekusian dari proses tersebut terdiri atas siklus CPU ekskusi dan M/K Wait . Proses hanya akan bolak-balik dari dua pernyataan ini, inilah
+                                    yang disebut Siklus Burst CPU-M/K. Pengeksekusian proses dimulai dengan Burst CPU, lalu diikuti olehi Burst M/K, kemudian Burst CPU lagi lalu Burst M/K lagi, dan seterusnya dilakukan secara bergiliran. Burst CPU terakhir
+                                    akan berakhir dengan permintaan sistem untuk mengakhiri pengeksekusian melalui Burst M/K lagi.</p>
+                                <b><li>
+                                            DISPATCHER
+                                        </li></b><br>
+                                <p>Dispatcher adalah modul yang memberikan kontrol CPU kepada proses yang sedang terjadwal. fungsinya adalah :
+                                    <ol>
+                                        <li>
+                                            <p>Context switching . Mengganti state dari suatu proses dan mengembalikannya untuk menghindari monopoli cpu oleh satu proses tertentu. Context switching dilakukan untuk menangani suatu interrupt (misalnya menunggu
+                                                waktu M/K). Untuk menyimpan state dari proses-proses yang terjadwal sebuah Process Control Block harus dibuat untuk mengingat proses-proses yang sedang diatur scheduler. </p>
+                                        </li>
+                                        <li>
+                                            <p> Switching to user mode dari kernel mode.</p>
+                                        </li>
+                                        <li>
+                                            <p> Lompat dari suatu bagian di progam user untuk mengulang program.</p>
+                                        </li>
+                                    </ol>
+                                    <p> Dispatch latency adalah waktu yang diperlukan dispatcher untuk menghentikan suatu proses dan memulai proses yang lain.</p>
+                                    <b><li>
+                                            PENJADWAL CPU
+                                        </li></b><br>
+                                    <p>uatu proses mengandung suatu cycle atau siklus dari pengeksekusian CPU dan M/K wait. Suatu proses yang dieksekusi oleh CPU terjadi diantara dua cycle tersebut.</p>
+                                    <p>Proses eksekusi dimulai dengan CPU brust lalu M/K brust dan kembali lagi ke M/K brust. Pada saaat pengeksekusian menjalankan instruksi nya pada CPU Burst dan akan mengalami suatu M/K Burst pada saat menunggu proses
+                                        M/K (M/K Burst). Sautu proses akan berada di posisi kedua siklus tersebut,. Tetapi bisa saja suatu proses memiliki cpu brust yang lama yang disebut CPU Bound, contohnya seperti proses aritmatika.</p>
+                                    <p>Contoh CPU Bound yang lain adalah proses pengeksekusian graphic game, dimana proses ini banyak menunggu masukkan dan keluaran dari M/K. semakin tinggi kualitas graphic maka semakin lama waktu yang diperlukan, namun
+                                        pada jaman sekarang cpu sudah berkembang sehingga mampu menangani proses ini dengan baik.</p>
+                                    <p>Ketika CPU mengalami waktu idle, sistem operasi harus memilih salah satu proses untuk masuk kedalam antrian yang akan untuk dieksekusi. Pemilihan tersebut dilakukan oleh penjadwal jangka pendek atau penjadwal CPU. Ada
+                                        tiga tipe penjadwal yang berada bersama pada sistem operasi kompleks, yaitu :</p>
+                                    <ol type="a">
+                                        <li>
+                                            <p>Penjadwal jangka pendek yang bertugas menjadwalkan alokasi pemroses di antara proses-proses yang telah siap di memori utama.</p>
+                                        </li>
+                                        <li>
+                                            <p>Penjadwal jangka menengah akan menangani serta mengendalikan transisi dari suspended-toready dari proses-proses swapping.</p>
+                                        </li>
+                                        <li>
+                                            <p>Penjadwal jangka panjang bekerja terhadap antrian batch dan memilih batch berikutnya yang harus dieksekusi.</p>
+                                        </li>
+                                    </ol>
+                                    <b><li>
+                                            PENJADWALAN PREEMTIVE DAN NON-PREEMPTIVE
+                                        </li></b><br>
+                                    <p>Penjadwalan Preemptive mempunyai arti kemampuan sistem operasi untuk memberhentikan sementara proses yang sedang berjalan untuk memberi ruang kepada proses yang prioritasnya lebih tinggi. Preemptive memungkinkan sistem
+                                        untuk lebih bisa menjamin bahwa setiap proses mendapat sebuah slice waktu operasi. Dan juga membuat sistem lebih cepat merespon terhadap event dari luar (contohnya seperti ada data yang masuk) yang membutuhkan reaksi
+                                        cepat dari satu atau beberapa proses.</p>
+                                    <p>Penjadwalan Non Preemptive ialah salah satu jenis penjadwalan dimana sistem operasi tidak pernah melakukan context switch dari proses yang sedang berjalan ke proses yang lain. Dengan kata lain, proses yang sedang berjalan
+                                        tidak bisa di- interupt.</p>
+                                    <p>Penjadwalan Non Preemptive terjadi ketika proses hanya:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Berjalan dari running state sampai waiting state
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Dihentikan</p>
+                                        </li>
+                                    </ul>
+                                    <p>Ini berarti CPU menjaga proses sampai proses itu dihentikan (proses tidak diganggu) Atau pindah ke waiting state .
+                                    </p>
+                                    <b><li>
+                                            KRITERIA PPENJADWALAN CPU
+                                        </li></b><br>
+                                    <p>Banyak kriteria yang bisa digunakan dalam menilai algoritma penjadwalan CPU</p>
+                                    <ol>
+                                        <b><li><p>CPU Utilization</p></li></b>
+                                        <p>Cpu Utilization adalah persentase dari CPU yang diginakan, memiliki ragen 0-100 persen. Cpu utilization dapat melihat kesibukan dari satu prosesor.</p>
+                                        <b><li><p>Throughput</p></li></b>
+                                        <p>Throughput adalah banyaknya proses yang diselesaikan per satuan waktu. Jika kita mempunyai beberapa proses yang sama dan memiliki beberapa algoritma penjadwalan yang berbeda, throughput bisa menjadi salah satu kriteria
+                                            penilaian, dimana algoritma yang menyelesaikan proses terbanyak dengan waktu paling singkat mungkin yang terbaik.</p>
+                                        <b><li><p><i> Turnaround Time 
+                                                .</i></li></b> Dari sudut pandang proses tertentu, kriteria yang penting adalah berapa lama untuk mengeksekusi proses tersebut.</p>
+
+                                <p>Tapi keefektifan proses algoritma penjadwalan juga berpengaruh dalam menyelesaikan sebuah proses. Karena setiap proses memiliki keidentikan sendiri dan tentunya memerlukan algoritma penjadwalan yang berbeda agar efektif
+                                    Interval waktu yang diijinkan dengan waktu yang dibutuhkan untuk menyelesaikan sebuah proses disebut turnaround time . Turnaround time adalah jumlah periode untuk menunggu untuk dapat ke memori, menunggu di ready queue
+                                    , eksekusi CPU, dan melakukan operasi M/K.</p>
+                                <b><li><p>Waiting Time 
+                                    </p></li></b>
+                                <p>Algoritma penjadwalan CPU tidak mempengaruhi waktu untuk melaksanakan proses tersebut atau M/K, itu hanya mempengaruhi jumlah waktu yang dibutuhkan proses di antrian ready . Waiting time adalah jumlah waktu yang dibutuhkan
+                                    proses di antrian ready .
+                                </p>
+                                </ol>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sinkron-proses" id="sinkron-proses">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Sinkronisasi Proses</u></b>
+                            </li><br>
+                            <ol type="a">
+                                <b><li><p>Pengertian Sinkronisasi</p></li></b>
+                                <p>Sinkronisasi merupakan suatu proses secara bersama sama dan saling berbagi data bersama dapat mengakibatkan race condition atau inkosistensi data.</p>
+                                <p>Sinkornisasi di perlukan untuk menghindari terjadinya ketidak konsistenan data akibat adanya akses secara konkuren. Proses-Proses tersebut disebut konkukuren jika Proses itu ada dan berjalan pada waktu yang bersamaan.</p>
+                                <b><li><p>Perangkat Sinkronisasi</p></li></b>
+                                <p style="text-align: justify">perangkat Sinkronisasi adalah:<br /> Intruksi Test-and-set adalah Intuksi atomik yang dapat dihunakan untuk menangani masalah Critical Section.</p>
+                                <p>test send set dapat dianalogikan dengan kode dibawah ini:</p>
+                                <b><p>function test-and-set (var target; boolean) boolean;<br> begin<br /> test-and-set ; = target:<br /> target : = true ;<br /> end</p></b>
+                                <p><b>Semafor</b> merupakan sebuah variabel yang hanya dapat di akses oleh dua buah operasi standar yaitu increment dan decrement.</p>
+                                <p><b>JVM </b>iyalah mengimplementasikan monitor. monitor JVM dapat digunakan menggunakan keyword synchronized</p>
+                                <p><b>manfaat Sinkronisasi iyalah:</b><br> sebagai penyimpanan data sementara dan non sementara agar dapat mempermudah pekerjaan.</p>
+                                <b><li><p>Masalah Pada Sinkronisasi</p></li></b>
+                                <p>Masalah pada Sinkronisasi terdapat dari masalah lainnya, seperti Masalah</p>
+                                <p><b>Race Condition </b> dan <b> Critical Section. </b></p>
+                                <ol type="i">
+                                    <b><li><p>Race Condition</p></li></b>
+                                    <p>Race Condition merupakan suatu kondisi dimana dua atau lebih proses mengakses sumber daya secara bersama sama.</p>
+                                    <p><b>Cara Menghindari Race Condition</b></p>
+                                    <p>Jika suatu proses sedang menjalankan Critical Section, maka proses lain tidak bisa masuk kedalam Critical Section tersebut.</p>
+                                    <b><li><p>Pengertian Critical Section</p></li></b>
+                                    <p>Critical Section merupakan suatu kode segmen dari proses-proses yang memungkinkan terjadinya Race Condition.</p>
+                                    <p>beberapa kode dalam Critical Section , kode tersebut iyalah :</p>
+                                    <p><b>Entry Section :</b> kode yang difungsikan untuk masuk ke dalam critical section</p>
+                                    <p><b>Critical Section :</b> di mana kode ini hanya ada dalam satu proses yang dapat dieksekusi pada satu waktu.</p>
+                                    <p><b>Exit Section:</b> akhir dari critical section, dan mengizinkan proses lain.</p>
+                                    <p><b>Remainder Section :</b> kode istirahat setelah masuk ke proses critical section.</p>
+                                    <p><b>Solusi Critical Section Adalah :</b></p>
+                                    <p><b>Mutual Exclusion :</b> Jika proses pi sedang mengeksekusi critical section-nya maka tidak ada proses lain yang dapat mengeksekusi dalam critical section mereka.</p>
+                                    <p><b>Terjadinya Kemajuan (Progress) :</b> Jika tidak ada proses yang sedang dieksekusi dalam critical section dan ada beberapa proses yang ingin masuk ke critical section mereka, maka pemilihan proses yang akan masuk
+                                        ke critical section berikutnya tidak bias ditunda.</p>
+                                    <p><b>Adanya batas waktu tunggu (bounded waiting) :</b> Suatu keterikatan harus ada pada sejumlah proses yang diijinkan masuk ke critical section mereka, setelah adanya proses yang meminta masuk ke critical section dan
+                                        sebelum permintaan itu diterima.</p>
+                                    <b><li><p>Critical Section dalam kernel adalah:</p></li></b>
+                                    <p><b>Interupsi :
+                                        </b></p>
+                                    <p>Interupsi merupakan pusat pada sistem operasi, yang menyediakan cara efisien bagi sistem operasi untuk berinteraksi terhadap lingkungannya. Pemrograman berbasis interupsi secara langsung didukung hampir dengan seluruh
+                                        CPU modern.</p>
+                                    <p><b>Page Fault:
+                                            </b></p>
+                                    <p>Page fault merupakan exception untuk permintaan alokasi page ke memori. Dalam konteks memori maya, page fault sering disingkat fault. Kernel code memanggil fungsi penjadwalan sendiri.</p>
+                                    <p><b>Critical Section mempunyai beberapa kode :</b></p>
+                                    <p><b> Entry Section : </b>kode yang digunakan untuk masuk ke dalam critical section <br>
+                                        <b>Critical Section : </b> Kode di mana hanya ada satu proses yang dapat dieksekusi pada satu waktu. Exit Section: akhir dari critical section, mengizinkan proses lain. <br>
+                                        <b> Remainder Section :</b> kode istirahat setelah masuk ke critical section</p>
+                                </ol>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lock" id="lock">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Deadlock</u></b>
+                            </li><br>
+                            <ol type="A">
+                                <b><li><p>Definisi</p></li></b>
+                                <p><i> Deadlock </i>dalam arti sebenarnya adalah kebuntuan. Kebuntuan yang dimaksud dalam sistem operasi adalah kebuntuan proses. Jadi Deadlock ialah suatu kondisi dimana proses tidak berjalan lagi atau pun tidak ada komunikasi
+                                    lagi antar proses. Deadlock disebabkan karena proses yang satu menunggu sumber daya yang sedang dipegang oleh proses lain yang sedang menunggu sumber daya yang dipegang oleh proses tersebut. Dengan kata lain, Deadlock
+                                    terjadi ketika proses menunggu sumber daya untuk melakukan suatu kejadian tertentu yang tidak akan pernah terjadi.
+                                </p>
+                                <p>Deadlock terjadi jika memenuhi 4 syarat berikut :
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p><i> Mutual Exclusion Condition </i><br> Sumber daya yang harus diberikan hanya pada satu proses</p>
+                                    </li>
+                                    <li>
+                                        <p><i> Hold and Wait Condition </i><br> Proses yang sedang memegang sumberdaya, menunggu sumber daya yang baru.</p>
+                                    </li>
+                                    <li>
+                                        <p><i> Non-Preemption Condition </i><br> Sumber daya yang diberikan sebelumnya tidak dapat diambil paksa dari proses yang sedang menggenggamnya. Harus terlebih dahulu dilepaskan oleh proses yang menggenggamnya.</p>
+                                    </li>
+                                    <li>
+                                        <p><i>Circular Wait Condition</i><br> Harus terdapat rantai sirkuler dari dua proses atau lebih, dan masing-masing proses menunggu sumber daya yang digenggam oleh proses berikutnya.</p>
+                                    </li>
+                                </ol>
+                                <b><li><p>Metode-metode Mengatasi Deadlock</p></li></b>
+                                <ol>
+                                    <b><li><p>Metode Pencegahan Deadlock (Deadlock Prevention)</p></li></b>
+                                    <ol type="a">
+                                        <li>
+                                            <p>Meniadakan Mutual Exclusion Melakukan spooling perangkat-perangkat yang harus didedikasikan ke suatu proses. Dengan spooling, permintaan-permintaan diantrikan di harddisk. Setiap job di antrian spooler akan
+                                                dilayani satu per satu.</p>
+                                        </li>
+                                        <li>
+                                            <p>Meniadakan Hold and Wait <br> 1) Mengalokasikan semua sumber daya atau tidak sama sekali <br> 2) Hold and release</p>
+                                        </li>
+                                        <li>
+                                            <p>Meniadakan Non-preemption</p>
+                                        </li>
+                                        <li>
+                                            <p>Meniadakan Menunggu Sirkular <br> 1) Proses hanya diperbolehkan menggenggam satu sumber daya. <br> 2) Penomoran global semua sumber daya.</p>
+                                        </li>
+                                    </ol>
+                                    <b><li><p>Metode Penghindaran Deadlock (Deadlock Avoidance)</p></li></b>
+                                    <ol type="a">
+                                        <li>
+                                            <p>Proses harus menyatakan seluruh sumber daya maksimum yang dibutuhkan sebelum eksekusi.</p>
+                                        </li>
+                                        <li>
+                                            <p>Ketika eksekusi berlangsung, proses meminta sumber daya yang diperlukan hingga batas maksimum yang dinyatakan di awal.</p>
+                                        </li>
+                                        <li>
+                                            <p>Proses yang menyatakan kebutuhan melewati kapasitas sistem, tidak akan dieksekusi.
+                                            </p>
+                                        </li>
+                                        <p><b> Safe State </b><br> State dinyatakan safe state jika tidak deadlock dan terdapat cara untuk memenuhi seluruh permintaan tanpa menghasilkan deadlock. <br>
+                                            <b> Unsafe State</b><br> State dinyatakan unsafe state jika tidak terdapat cara untuk memenuhi semua permintaan yang tertunda dengan menjalankan proses-proses sesuai suatu urutan.
+                                        </p>
+                                    </ol>
+                                    <b><li><p>Metode Deteksi (Deadlock Detection)</p></li></b>
+                                    <p>Untuk mengetahui ada atau tidaknya deadlock dalam suatu graf dapat dilihat dari perputaran dan resource yang dimilikinya, yaitu:</p>
+                                    <p>1. Jika tidak ada perputaran berarti tidak deadlock. <br> 2. Jika ada perputaran, ada potensi terjadi deadlock. <br> 3. Resource dengan instan tunggal dan perputaran mengakibatkan deadlock.</p>
+                                    <b><li><p>Pemulihan Deadlock (Deadlock Recovery)</p></li></b>
+                                    <p>Hal-hal yang terjadi dalam mendeteksi adanya Deadlock adalah: <br> 1. Permintaan sumber daya dikabulkan selama memungkinkan. <br> 2. Sistem operasi memeriksa adakah kondisi circular wait secara periodik. <br> 3. Pemeriksaan
+                                        adanya Deadlock dapat dilakukan setiap ada sumber daya yang hendak digunakan oleh sebuah proses. <br> 4. Memeriksa dengan algoritma tertentu.
+                                    </p>
+                                    <p>Ada beberapa jalan untuk kembali dari Deadlock. <br>
+                                        <b> Preemption</b><br> Untuk sementara waktu menjauhkan sumber daya dari pemakainya, dan memberikannya pada proses yang lain. Ide untuk memberi pada proses lain tanpa diketahui oleh pemilik dari sumber daya tersebut
+                                        tergantung dari sifat sumber daya itu sendiri. Perbaikan dengan cara ini sangat sulit atau dapat dikatakan tidak mungkin. Cara ini dapat dilakukan dengan memilih korban yang akan dikorbankan atau diambil sumber
+                                        dayanya utuk sementara, tentu saja harus dengan perhitungan yang cukup agar waktu yang dikorbankan seminimal mungkin. Setelah kita melakukan preemption dilakukan pengkondisian proses tersebut dalam kondisi aman.
+                                        Setelah itu proses dilakukan lagi dalam kondisi aman tersebut.</p>
+                                    <p><b> Melacak Kembali</b><br> Setelah melakukan beberapa langkah preemption, maka proses utama yang diambil sumber dayanya akan berhenti dan tidak dapat melanjutkan kegiatannya, oleh karena itu dibutuhkan langkah untuk
+                                        kembali pada keadaan aman dimana proses masih berjalan dan memulai proses lagi dari situ. Beberapa sistem mencoba dengan cara mengadakan pengecekan beberapa kali secara periodik dan menandai tempat terakhir kali
+                                        menulis ke disk, sehingga saat terjadi Deadlock dapat mulai dari tempat terakhir penandaannya berada.
+                                    </p>
+                                    <p><b>Lewat membunuh proses yang menyebabkan Deadlock</b><br> Cara yang paling umum ialah membunuh semua proses yang mengalami Deadlock. Cara ini paling umum dilakukan dan dilakukan oleh hampir semua 31 sistem operasi.
+                                        Namun, untuk beberapa sistem, kita juga dapat membunuh beberapa proses saja dalam siklus Deadlock untuk menghindari Deadlock dan mempersilahkan proses lainnya kembali berjalan. Atau dipilih salah satu korban untuk
+                                        melepaskan sumber dayanya, dengan cara ini maka masalah pemilihan korban menjadi lebih selektif, sebab telah diperhitungkan beberapa kemungkinan jika si proses harus melepaskan sumber dayanya.</p>
+                                    <p>Kriteria seleksi korban ialah: <br> 1. Yang paling jarang memakai prosesor <br> 2. Yang paling sedikit hasil programnya <br> 3. Yang paling banyak memakai sumber daya sampai saat ini <br> 4. Yang alokasi sumber daya
+                                        totalnya tersedkit <br> 5. Yang memiliki prioritas terkecil</p>
+                                </ol>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="manage-memori" id="manage-memori">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Management Memori</u></b>
+                            </li><br>
+                            <p><b> Manajemen memori </b>adalah bentuk manajemen sumber daya yang diterapkan pada memori komputer . Persyaratan penting dari manajemen memori adalah untuk menyediakan cara untuk secara dinamis mengalokasikan bagian memori untuk
+                                program atas permintaan mereka, dan membebaskannya untuk digunakan kembali ketika tidak lagi diperlukan. Ini penting untuk setiap sistem komputer canggih di mana lebih dari satu proses mungkin sedang berlangsung setiap
+                                saat.
+                            </p>
+                            <p>Beberapa metode telah dirancang untuk meningkatkan efektivitas manajemen memori. Sistem memori virtual memisahkan alamat memori yang digunakan oleh suatu proses dari alamat fisik yang sebenarnya, memungkinkan pemisahan proses
+                                dan meningkatkan ukuran ruang alamat virtual di luar jumlah RAM yang tersedia menggunakan paging atau swapping ke penyimpanan sekunder . Kualitas manajer memori virtual dapat memiliki efek luas pada kinerja sistem secara
+                                keseluruhan.
+                            </p>
+                            <ol type="A">
+                                <b><li><p>Konsep Dasar Memori</p></li></b>
+                                <p>Memori adalah pusat dari operasi pada sistem komputer modern, berfungsi sebagai tempat penyimpanan informasi yang harus diatur dan dijaga sebaik-baiknya. Memori adalah array besar dari word atau byte, yang disebut alamat.
+                                    CPU mengambil instruksi dari memory berdasarkan nilai dari program counter.</p>
+                                <p>Sedangkan manajemen memori adalah suatu kegiatan untuk mengelola memori komputer. Proses ini menyediakan cara mengalokasikan memori untuk proses atas permintaan mereka, membebaskan untuk digunakan kembali ketika tidak lagi
+                                    diperlukan serta menjaga alokasi ruang memori bagi proses. Pengelolaan memori utama sangat penting untuk sistem komputer, penting untuk memproses dan fasilitas masukan/keluaran secara efisien, sehingga memori dapat
+                                    menampung sebanyak mungkin proses dan sebagai upaya agar pemogram atau proses tidak dibatasi kapasitas memori fisik di sistem komputer (Eko, 2009).</p>
+                                <p>Memory manager merupakan salah satu bagian sistem operasi yang mempengaruhi dalam menentukan proses mana yang diletakkan pada antrian.</p>
+                                <b><p>Jenis Memori</p></b>
+                                <ol type="a">
+                                    <li>
+                                        <p>Memori Kerja </p>
+                                    </li>
+                                    <li>
+                                        <p>ROM/PROM/EPROM/EEPROM</p>
+                                    </li>
+                                    <li>
+                                        <p>RAM</p>
+                                    </li>
+                                    <li>
+                                        <p>MemoryCache</p>
+                                    </li>
+                                    <li>
+                                        <p>Memori Dukung</p>
+                                    </li>
+                                    <li>
+                                        <p>Floppy, harddisk, CD, dll.</p>
+                                    </li>
+                                </ol>
+                                <b><p>Alamat Memori</p></b>
+                                <ol type="a">
+                                    <li>
+                                        <p>Alamat memori mutlak (alamat fisik) </p>
+                                    </li>
+                                    <li>
+                                        <p>Alamat memori relatif (alamat logika)</p>
+                                    </li>
+                                    <li>
+                                        <p>Hubungan antara alamat multak dan alamat relatif</p>
+                                    </li>
+                                    <li>
+                                        <p>Jenis memori dan alamat memori</p>
+                                    </li>
+                                </ol>
+                                <b><p>Isi Memori</p></b>
+                                <ol type="a">
+                                    <li>
+                                        <p>Sistem bahasa penataolahan </p>
+                                    </li>
+                                    <li>
+                                        <p> Sistem Utilitas</p>
+                                    </li>
+                                    <li>
+                                        <p>Inti Sistem Operasi</p>
+                                    </li>
+                                    <li>
+                                        <p>Sistem Operasi</p>
+                                    </li>
+                                    <li>
+                                        <p>Pengendali alat (device drivers)</p>
+                                    </li>
+                                    <li>
+                                        <p>File pemakai</p>
+                                    </li>
+                                </ol>
+                                <p><strong>Fungsi Manajemen Memori</strong></p>
+                                <p>a) Mengelola informasi yang dipakai dan tidak dipakai.</p>
+                                <p>b) Mengalokasikan memori ke proses yang memerlukan.</p>
+                                <p>c) Mendealokasikan memori dari proses telah selesai.</p>
+                                <p>d) Mengelola swapping atau paging antara memori utama dan disk.</p>
+                                <p>Sistem operasi memberikan tanggapan terhadap manajemen memori utama untuk aktivitas-aktivitas sebagai berikut:</p>
+                                <p>a) Menjaga dan memelihara bagian-bagian memori yang sedang digunakan dan dari yang menggunakan.</p>
+                                <p>b) Memutuskan proses-proses mana saja yang harus dipanggil kememori jika masih ada ruang di memori.</p>
+                                <p>c) Mengalokasikan dan mendelokasikan ruang memori jika diperlukan</p>
+                                <p><strong>Jenis-Jenis Manajemen Memory</strong><strong></strong></p>
+                                <p><strong>Manajemen Memory Untuk Monoprogramming</strong></p>
+                                <p>Bila program komputer yang dijalankan hanya satu jenis selama proses berlangsung maka dikatakan mode kerja komputer itu adalah monoprogramming. Selama komputer itu bekerja maka memory RAM seluruhnya di kuasai oleh program
+                                    tersebut. Jadi RAM tidak dapat di masuki oleh program lain. Mode serupa ini di temui pada komputer berbasis DOS.</p>
+                                <p>Penempatan program di memory diatur sedemikain rupa sehingga (Eko, 2009) :</p>
+                                <p>a) BIOS selalu di ROM (BIOS)</p>
+                                <p>b) Sistem Operasi di RAM bawah (alamat rendah)</p>
+                                <p>c) Program Aplikasi di RAM tengah (alamat sesudah OS terakhir)</p>
+                                <p>d) Data Sementara di RAM atas (alamat sesudah Aplikasi terakhi).</p>
+                                <p>Bila sistem operasi telah selasai dimuat maka tampillah prompt di layar monitor, dan itu adalah tanda bahwa komputer siap menerima program aplikasi. Letakkan disk yang berisi program aplikasi pada diskdrive yang aktif lalu
+                                    eksekusi , sehingga program itu termuat seluruhnya ke RAM. Dengan demikian program aplikasi siap digunakan menurut semestinya.Kita lihat ketika komputer mula-mula dinyalakan maka proses yang dibaca pertama kali adalah
+                                    apa yang tertulis di dalam ROM. Setelah semua perintah di adalam ROM BIOS selesai dibaca maka komputer meminta kita memasukkan DOS ke dalam RAM-nya.Ketika DOS dibaca maka diletakkan sebagian dari program DOS yang terpenting
+                                    saja ke dalam RAM, seperti : COMMAND.COM dan INTERNAL COMMAND. Sedangkan program DOS yang lain masih tetap di dalam disk dan apabila kita perlukan dapat di eksekusi. Hal itu berguna untuk mrnjaga agar RAM tidak penuh
+                                    oleh Sistem Operasi saja.</p>
+                                <p>Ketika kita bekerja dengan program aplikasi tasdi maka kita akan menghasilkan data. Data itu akan di simpan sementara di RAM yang masih tersisa. Data yang disimpan di RAM bersifat voletile, artinya data hanya bisa bertahan
+                                    selama catudaya komputer masih ON. Untuk berjaga-jaga biasakan menyimpan data ke disk dalam jangka waktu yang tidak terlalu lama, misalnya setiap 5 menit sekali. Selain menjaga data agar tidak amblas menyimpan ke disk
+                                    bertujuan juga untuk mengosongkan RAM agar tidak cepat penuh.</p>
+                                <p>Didalam sistem juga dapat kita lihat bahwa sistem operasi terletak berdekatan dengan program lain di RAM sehingga kemungkinan sistem operasi ter ganggu atau terubah oleh proses yang sedang berjalan sangat besar .Hal itu
+                                    tidak boleh terjadi.Untuk mencegah terganggu sitem operasi tersebut maka alamat tertinggi dari sistem operasi dletakkan pada register batas dalam CPU. Jika ada proses yang mengacu ke alamat itu atau yang lebih rendah
+                                    dari itu maka proses di hentikan dan program akan menampilkan pesan kesalahan.</p>
+                                <p><strong>Manajemen Memory  Untuk Multiprogramming</strong></p>
+                                <p>Untuk sistem komputer yang berukuran besar (bukan small computers), membutuhkan pengaturan memori, karena dalam multiprogramming akan melibatkan banyak pemakai secara simultan sehingga di memori akan terdapat lebih dari
+                                    satu proses bersamaan. Oleh karena itu dibutuhkan sistem operasi yang mampu mendukung dua kebutuhan tersebut, meskipun hal tersebut saling bertentangan, yaitu (Ama, 2003) :</p>
+                                <p>a) Pemisahan ruang-ruang alamat.</p>
+                                <p>b) Pemakaian bersama memori.</p>
+                                <p>Manajer memori harus memaksakan isolasi ruang-ruang alamat tiap proses agar mencegah proses aktif atau proses yang ingin berlaku jahat mengakses dan merusak ruang alamat proses lain. Manajer memori di lingkungan multiprogramming
+                                    sekalipun melakukan dua hal, yaitu :</p>
+                                <p>a) Proteksi memori dengan isolasi ruang-ruang alamat secara dis-joint.</p>
+                                <p>b) Pemakaian bersama memori.</p>
+                                <p>Memungkinkan proses-proses bekerja sama mengakses daerah memori bersama. Ketika konsep multiprogramming digunakan, pemakaian CPU dapat ditingkatkan. Sebuah model untuk mengamati pemakaian CPU secara probabilistic :</p>
+                                <p align="center">CPU utilization = 1 &#8211; p n</p>
+                                <p>Dengan :</p>
+                                <p>a) N menunjukkan banyaknya proses pada suatu saat, sehingga kemungkinan bahwa semua n proses akan menunggu menggunakan I/O (masalah CPU menganggur) adalah sebesar pn. Fungsi dari n disebut sebagai degree of multiprogramming.</p>
+                                <p>b) P menunjukkan besarnya waktu yang digunakan sebuah proses</p>
+                                <b><li><p>Strategi Manajemen Memori</p></li></b>
+                                <p>Strategi yang dikenal untuk mengatasi hal tersebut adalah memori maya. Memori maya menyebabkan sistem seolah-olah memiliki banyak memori dibandingkan dengan keadaan memori fisik yang sebenarnya. Memori maya tidak saja memberikan
+                                    peningkatan komputasi, akan tetapi memori maya juga memiliki bberapa keuntungan seperti :</p>
+                                <p><em> </em></p>
+                                <p><strong>Large Address Space </strong></p>
+                                <p>Membuat sistem operasi seakan-akan memiliki jumlah memori melebihi kapasitas memori fisik yang ada. Dalam hal ini memori maya memiliki ukuran yang lebih besar daripada ukuran memori fisik.</p>
+                                <p><strong>Proteksi. </strong></p>
+                                <p>Setiap proses di dalam sistem memiliki virtual address space. Virtual address space tiap proses berbeda dengan proses yang lainnya lagi, sehingga apapun yang terjadi pada sebuah proses tidak akan berpengaruh secara langsung
+                                    pada proses lainnya</p>
+                                <p><strong>Memory Mapping </strong></p>
+                                <p>Memory mapping digunakan untuk melakukan pemetaan image dan file-file data ke dalam alamat proses. Pada pemetaan memori, isi dari file akan di link secara langsung ke dalam virtual address space dari proses.</p>
+                                <p><strong>Fair Physical Memory Allocation </strong></p>
+                                <p>Digunakan oleh Manajemen Memori untuk membagi penggunaan memori fisik secara &#8220;adil&#8221; ke setiap proses yang berjalan pada sistem.</p>
+                                <p><strong>Shared Virtual Memory.</strong></p>
+                                <p>Meskipun tiap proses menggunakan address space yang berbeda dari memori maya, ada kalanya sebuah proses dihadapkan untuk saling berbagi penggunaan memori.</p>
+                                <b><li><p>Ruang Alamat Logika dan Fisik</p></li></b>
+                                <p>Alamat Logika adalah alamat yg dibentuk di CPU, disebut juga alamat virtual. Alamat fisik adalah alamat yang terlihat oleh memori. Untuk mengubah dari alamat logika ke alamat fisik diperlukan suatu perangkat keras yang
+                                    bernama MMU (Memory Management Unit). Pengubahan dari alamat logika ke alamat fisik adalah pusat dari manajemen memori. Alamat yang dibangkitkan oleh CPU disebut alamat logika (logical address) dimana alamat terlihat
+                                    sebagai uni memory yang disebut alamat fisik (physical address). Tujuan utama manajemen memori adalah konsep meletakkan ruang alamat logika ke ruang alamat fisik (Ama, 2003).</p>
+                                <p>Hasil skema waktu kompilasi dan waktu pengikatan alamat pada alamat logika dan alamat memori adalah sama. Tetapi hasil skema waktu pengikatan alamat waktu eksekusi berbeda. dalam hal ini, alamat logika disebut dengan alamat
+                                    maya (virtual address). Himpunan dari semua alamat logika yang dibangkitkan oleh program disebut dengan ruang alamat logika (logical address space); himpunan dari semua alamat fisik yang berhubungan dengan alamat logika
+                                    disebut dengan ruang alamat fisik (physical address space).</p>
+                                <p>Memory Manajement Unit (MMU) adalah perangkat keras yang memetakan alamat virtual ke alamat fisik. Pada skema MMU, nilai register relokasi ditambahkan ke setiap alamat yang dibangkitkan oleh proses user pada waktu dikirim
+                                    ke memori.</p>
+                                <p>Register basis disebut register relokasi. Nilai dari register relokasi ditambahkan ke setiap alamat yang dibangkitkan oleh proses user pada waktu dikirim ke memori, sebagai contoh, apabila basis 14000, maka user mencoba
+                                    menempatkan ke alamat lokasi 0 dan secara dinamis direlokasi ke lokasi 14000. Pengaksesan ke lokasi logika 346, maka akan dipetakan ke lokasi 14346. Sistem operasi MS-DOS yang masih keluarga intel 80X86 menggunakan
+                                    empat register relokasi ketika proses loading dan running.</p>
+                                <p>User program tidak pernah melihat alamat fisik secara real. Program dapat membuat sebuah penunjuk ke lokasi 346, mengirimkan ke memory, memanipulasinya, membandingkan dengan alamat lain, semua menggunakan alamat 346. Hanya
+                                    ketika digunakan sebagai alamat memory akan direlokasi secara relatif ke register basis.</p>
+                                <b><li><p>Swapping</p></li></b>
+                                <p>Sebuah proses, sebagaimana telah diterangkan di atas, harus berada di memori sebelum dieksekusi. Proses swapping menukarkan sebuah proses keluar dari memori untuk sementara waktu ke sebuah penyimpanan sementara dengan sebuah
+                                    proses lain yang sedang membutuhkan sejumlah alokasi memori untuk dieksekusi. Tempat penyimpanan sementara ini biasanya berupa sebuah fast disk dengan kapasitas yang dapat menampung semua salinan dari semua gambaran
+                                    memori serta menyediakan akses langsung ke gambaran tersebut. Jika eksekusi proses yang dikeluarkan tadi akan dilanjutkan beberapa saat kemudian, maka ia akan dibawa kembali ke memori dari tempat penyimpanan sementara
+                                    tadi. Bagaimana sistem mengetahui proses mana saja yang akan dieksekusi? Hal ini dapat dilakukan dengan ready queue. Ready queue berisikan semua proses yang terletak baik di penyimpanan sementara maupun memori yang
+                                    siap untuk dieksekusi. Ketika penjadwal CPU akan mengeksekusi sebuah proses, ia lalu memeriksa apakah proses bersangkutan sudah ada di memori ataukah masih berada dalam penyimpanan sementara. Jika proses tersebut belum
+                                    berada di memori maka proses swapping akan dilakukan seperti yang telah dijelaskan di atas.</p>
+                                <p>Sebuah contoh untuk menggambarkan teknik swapping ini adalah sebagai berikut: Algoritma Round-Robin yang digunakan pada multiprogramming environment menggunakan waktu kuantum (satuan waktu CPU) dalam pengeksekusian proses-prosesnya.
+                                    Ketika waktu kuantum berakhir, memory manager akan mengeluarkan (swap out) proses yang telah selesai menjalani waktu kuantumnya pada suatu saat serta memasukkan (swap in) proses lain ke dalam memori yang telah bebas
+                                    tersebut. Pada saat yang bersamaan penjadwal CPU akan mengalokasikan waktu untuk proses lain dalam memori. Hal yang menjadi perhatian adalah, waktu kuantum harus cukup lama sehingga waktu penggunaan CPU dapat lebih
+                                    optimal jika dibandingkan dengan proses penukaran yang terjadi antara memori dan disk.</p>
+                                <p>Teknik swapping roll out, roll in menggunakan algoritma berbasis prioritas dimana ketika proses dengan prioritas lebih tinggi tiba maka memory manager akan mengeluarkan proses dengan prioritas yang lebih rendah serta me-load
+                                    proses dengan prioritas yang lebih tinggi tersebut. Saat proses dengan prioritas yang lebih tinggi telah selesai dieksekusi maka proses yang memiliki prioritas lebih rendah dapat dimasukkan kembali ke dalam memori dan
+                                    kembali dieksekusi.</p>
+                                <p>Sebagian besar waktu swapping adalah waktu transfer. Sebagai contoh kita lihat ilustrasi berikut ini: sebuah proses pengguna memiliki ukuran 5 MB, sedangkan tempat penyimpanan sementara yang berupa harddisk memiliki kecepatan
+                                    transfer data sebesar 20 MB per detiknya. Maka waktu yang dibutuhkan untuk mentransfer proses sebesar 5 MB tersebut dari atau ke dalam memori adalah sebesar 5000 KB / 20000 KBps = 250 ms.</p>
+                                <p>Perhitungan di atas belum termasuk waktu latensi, sehingga jika kita asumsikan waktu latensi sebesar 2 ms maka waktu swap adalah sebesar 252 ms. Oleh karena terdapat dua kejadian dimana satu adalah proses pengeluaran sebuah
+                                    proses dan satu lagi adalah proses pemasukan proses ke dalam memori, maka total waktu swap menjadi 252 + 252 = 504 ms.</p>
+                                <p>Agar teknik swapping dapat lebih efisien, sebaiknya proses-proses yang di- swap hanyalah proses-proses yang benar-benar dibutuhkan sehingga dapat mengurangi waktu swap. Oleh karena itulah, sistem harus selalu mengetahui
+                                    perubahan apapun yang terjadi pada pemenuhan kebutuhan terhadap memori. Disinilah sebuah proses memerlukan fungsi system call, yaitu untuk memberitahukan sistem operasi kapan ia meminta memori dan kapan membebaskan
+                                    ruang memori tersebut.</p>
+                                <p>Jika kita hendak melakukan swap, ada beberapa hal yang harus diperhatikan. Kita harus menghindari menukar proses dengan M/K yang ditunda (asumsinya operasi M/K tersebut juga sedang mengantri di antrian karena peralatan
+                                    M/Knya sedang sibuk). Contohnya seperti ini, jika proses P1dikeluarkan dari memori dan kita hendak memasukkan proses P2, maka operasi M/K yang juga berada di antrian akan mengambil jatah ruang memori yang dibebaskan
+                                    P1 tersebut. Masalah ini dapat diatasi jika kita tidak melakukan swap dengan operasi M/K yang ditunda. Selain itu, pengeksekusian operasi M/K hendaknya dilakukan pada buffer sistem operasi.</p>
+                                <p>Tiap sistem operasi memiliki versi masing-masing pada teknik swapping yang digunakannya. Sebagai contoh pada UNIX, swapping pada dasarnya tidak diaktifkan, namun akan dimulai jika banyak proses yang membutuhkan alokasi
+                                    memori yang banyak. Swapping akan dinonaktifkan kembali jika jumlah proses yang dimasukkan berkurang. Pada sistem operasi Microsoft Windows 3.1, jika sebuah proses baru dimasukkan dan ternyata tidak ada cukup ruang
+                                    di memori untuk menampungnya, proses yang lebih dulu ada di memori akan dipindahkan ke disk. Sistem operasi ini pada dasarnya tidak menerapkan teknik swapping secara penuh, hal ini disebabkan pengguna lebih berperan
+                                    dalam menentukan proses mana yang akan ditukar daripada penjadwal CPU. Dengan ketentuan seperti ini proses-proses yang telah dikeluarkan tidak akan kembali lagi ke memori hingga pengguna memilih proses tersebut untuk
+                                    dijalankan.
+                                </p>
+                                <p><strong>Manajemen Memori Berdasarkan Keberadaan Swapping Atau Paging </strong></p>
+                                <p>a) Manajemen tanpa swapping atau paging</p>
+                                <p>b) Manajemen dengan swapping atau paging</p>
+                                <p><strong>Memori Tanpa Swapping Or Paging</strong></p>
+                                <p>Merupakan manajemen memori tanpa pemindahan citra proses antara memori utama dan disk selama eksekusi. Manajemen ini terdiri dari :</p>
+                                <p><em> </em></p>
+                                <p><em>Monoprogramming </em></p>
+                                <p>Ciri-ciri :</p>
+                                <p>a) Hanya satu proses pada satu saat</p>
+                                <p>b) Hanya satu proses menggunakan semua memori</p>
+                                <p>c) Pemakai memuatkan program ke seluruh memori dari disk atau tape</p>
+                                <p>d) Program mengambil kendali seluruh mesin</p>
+                                <p>&nbsp;</p>
+                                <p><em>Multiprogramming Dengan Pemartisian Statis  </em></p>
+                                <p>a) Pemartisian menjadi partisi-partisi berukuran sama, yaitu ukuran semua partisi memori adalah sama</p>
+                                <p>b) Pemartisian menjadi partisi-partisi berukuran berbeda, yaitu ukuran semua partisi memori adalah berbeda.</p>
+                                <p><em>Strategi Penempatan Program Ke Partisi </em></p>
+                                <p>Satu Antrian Tunggal Untuk Semua Partisi Keuntungan : Lebih fleksibel serta implementasi dan operasi lebih minimal karena hanya mengelola satu antrian. Kelemahan : Proses dapat ditempatkan di partisi yang banyak diboroskan,
+                                    yaitu proses kecil ditempatkan di partisi sangat besar.</p>
+                                <p>Tetap dengan Satu Antrian Satu Antrian Untuk Tiap Partisi (banyak antrian Untuk Seluruh Partisi). Keuntungan : Meminimalkan pemborosan memori. Kelemahan : Dapat terjadi antrian panjang di suatu partisi sementara antrian
+                                    partisi &#8211; partisi lain kosong</p>
+                                <p align="center">
+                                    <p><strong>Multiprogramming Dengan Swapping </strong></p>
+                                    <p>Merupakan manajemen memori dengan pemindahan citra proses antara memori utama dan disk selama eksekusi, atau dengan kata lain merupakan manajemen pemindahan proses dari memori utama ke disk dan kembali lagi (swapping).
+                                        Manajemen ini terdiri dari :</p>
+                                    <p><strong>Multiprogramming Dengan Pemartisisan Dinamis </strong></p>
+                                    <p>Jumlah, lokasi dan ukuran proses di memori dapat beragam sepanjang waktu secara dinamis. Kelemahan: a) Dapat terjadi lubang-lubang kecil memori di antara partisi-partisi yang dipakai; b) Merumitkan alokasi dan dealokasi
+                                        memori.
+                                    </p>
+                                    <p>Solusi:</p>
+                                    <p>Lubang-lubang kecil di antara blok-blok memori yang digunakan dapat diatasi dengan pemadatan memori yaitu menggabungkan semua lubang kecil menjadi satu lubang besar dengan memindahkan semua proses agar saling berdekatan.</p>
+                                    <p>&nbsp;</p>
+                                    <p><strong>Strategi Alokasi Memori </strong></p>
+                                    <p>a) First fit algorithm : memory manager men-scan list untuk menemukan hole yg cukup untuk menampung proses yg baru. Proses akan menempati hole pertama yg ditemuinya yg cukup untuk dirinya.</p>
+                                    <p>b) Next fit algorithm : sama dengan first fit, tetapi pencarian hole dimulai dari hole ditemuinya dari scan sebelumnya.</p>
+                                    <p>c) Best fit algorithm : dicari hole yang akan menghasilkan sisa paling sedikit setelah dimasuki proses.</p>
+                                    <p>d) Worst fit algorithm : kebalikan dari best fit.</p>
+                                    <p>e) Quick fit algorithm : mengelompokkan hole-hole dan membuat listnya sendiri. Misalnya, ada list untuk hole 4K, satu list untuk 8K, dst.</p>
+                                    <p>f) Sistem Buddy : Memori di susun dalm senari blok-blok bebas berukuran 1,2,4,8,16 byte dst, sampai kapasitas memori.</p>
+                                    <p>Dari berbagai cara alokasi tsb. Di atas, sebuah hole yg ditempati proses akan terbagi menjadi bagian yang dipakai proses dan memori yang tidak terpakai (fragmen). Timbulnya memori yang tidak terpakai disebut fragmentasi.
+                                        Ada dua macam fragmen :</p>
+                                    <p>a) Internal : sisa hole yang tidak terpakai setelah terisi proses.</p>
+                                    <p>b) Eksternal : hole yang secara utuh terlalu kecil untuk dipakai oleh proses manapun.</p>
+                                    <p><strong>Alokasi Ruang Swap pada Disk (Penempatan proses pada disk setelah di-swap-out dari memori) </strong></p>
+                                    <p>a) Ruang disk tempat swap dialokasikan begitu diperlukan</p>
+                                    <p>b) Ruang disk tempat swap dialokasikan lebih dahulu.</p>
+                                    <p>Algoritma untuk pengaturan ruang swap pada disk sama dengan untuk memori utama. Perbedaannya adalah ruang pada disk harus dialokasikan sebagai kelipatan bilangan bulat dari disk block.</p>
+                                    <p style="text-align:left;"><strong>A. Kesimpulan</strong></p>
+                                    <p><strong>Memori dan Manajemen Memori</strong></p>
+                                    <p>Memori adalah pusat dari operasi pada sistem komputer modern, berfungsi sebagai tempat penyimpanan informasi yang harus diatur dan dijaga sebaik-baiknya. Memori adalah array besar dari word atau byte, yang disebut alamat.
+                                        CPU mengambil instruksi dari memory berdasarkan nilai dari program counter (Ama, 2003).</p>
+                                    <p>Sedangkan manajemen memori adalah suatu kegiatan untuk mengelola memori komputer. Proses ini menyediakan cara mengalokasikan memori untuk proses atas permintaan mereka, membebaskan untuk digunakan kembali ketika tidak
+                                        lagi diperlukan serta menjaga alokasi ruang memori bagi proses.Manajemen Memori merupakan salah satu bagian terpenting pada sistem operasi. Sejak awal komputer digunakan untuk keperluan komputasi, kebutuhan akan
+                                        memori yang lebih besar dibandingkan dengan keadaan fisik memori di dalam sistem terus meningkat. Berbagai perhitungan dan strategi terus dilakukan untuk mengatasi keterbatasan ukuran memori fisik (Ama, 2003).</p>
+                                    <p><strong>Strategi Manjemen Memori</strong></p>
+                                    <p>Strategi yang dikenal untuk mengatasi hal tersebut adalah memori maya. Memori maya menyebabkan sistem seolah-olah memiliki banyak memori dibandingkan dengan keadaan memori fisik yang sebenarnya. Memori maya tidak saja
+                                        memberikan peningkatan komputasi.</p>
+                                    <p><strong>Ruang Alamat Logika dan Fisik</strong></p>
+                                    <p>Tujuan utama manajemen memori adalah konsep meletakkan ruang alamat logika ke ruang alamat fisik. Alamat Logika adalah alamat yg dibentuk di CPU, disebut juga alamat virtual. Alamat fisik adalah alamat yang terlihat
+                                        oleh memori.</p>
+                                    <p><strong>Swapping</strong></p>
+                                    <p>Sebuah proses yang harus berada di memori sebelum dieksekusi. Proses swapping menukarkan sebuah proses keluar dari memori untuk sementara waktu ke sebuah penyimpanan sementara dengan sebuah proses lain yang sedang membutuhkan
+                                        sejumlah alokasi memori untuk dieksekusi. Tempat penyimpanan sementara ini biasanya berupa sebuah fast disk dengan kapasitas yang dapat menampung semua salinan dari semua gambaran memori serta menyediakan akses
+                                        langsung ke gambaran tersebut.</p>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="manage-penyimpanan" id="manage-penyimpanan">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Management Media Penyimpanan</u></b>
+                            </li><br>
+                            <div style="text-align: justify;">Pada manajemen media penyimpan (storage) ini, kita akan mempelajari bagaimana suatu storage dalam hal ini harddisk kita atur agar dapat bekerja secara optimal. Sekarang kita akan coba untuk mengenal lebih dekat tentang harddisk.</div>
+                            <div style="text-align: justify;"><br />
+                            </div>
+                            <div style="text-align: justify;"><b>Pengertian dasar harddisk</b><br /> Harddisk berfungsi sebagai tempat penyimpanan data. Tujuan utama harddisk adalah menyimpan informasi dan berdasarkan permintaan, mengirim kembali informasi itu. Fungsi harddisk mirip dengan
+                                perekam tape audio: keduanya memakai pola magnetisasi dalam ﬁlm berbahan magnetis yang tipis pada bahan pendukung (disebut substrate) bagi penyimpanan informasi.<br />
+                                <a name='more'></a><br /> Dua teknologi berbeda dalam drive tape itu memakai lapisan bawah rekamannya sebagai potongan plastik panjang yang dilapisi oleh kumparan dan harddisk memakai disk metal yang keras. Perbedaan yang lebih penting
+                                adalah bahwa tape audio menyimpan informasi dalam bentuk analog, yang berarti bahwa sinyal magnetis secara langsung meniru informasi audio yang disimpan. Hard disk adalah perangkat digital, signal magnetisnya dipakai untuk
+                                menyimpan kondisi yang menunjukkan data yang disimpan.</div>
+                            <div style="text-align: justify;"><br />
+                                <b>Konstruksi Utama Harddisk</b><br />
+                                <b>Piringan dan Head</b><br /> Akhir-akhir ini, beberapa pembuat drive telah mulai membuat drive harddisk yang memakai piringan gelas. Piringan gelas dapat dibuat lebih datar dan lebih halus dengan mudah, dan mempunyai
+                                kekakuan lebih tinggi. Kualitas piringan gelas ini terutama penting dalam beberapa drive baru yang berputar lebih cepat daripada drive yang biasa.<br /> Ketika disk tidak berubah (drive nonaktif), spring yang lemah menekan
+                                tiap head yang berhubungan dengan permukaan piringan. Selagi disk berubah, head berombak dalam lingkaran yang dibuat oleh disk yang berubah. Udara yang mengalir melewati head cukup kuat untuk mengangkat head dari permukaan,
+                                meski hanya oleh jarak yang sangat kecil.</div>
+                            <div style="text-align: justify;"><br />
+                                <b>Track dan Cylinder</b><br /> Seperti halnya putaran disk, dengan head assembly yang dikerjakan di satu posisi, setiap head melacak ring bundar di permukaan piringannya. Ring ini disebut track. Informasi yang direkam
+                                di ring tersebut disebut sector.<br /> Track tersebut tampak, bila anda dapat melihatnya, menyerupai alur di piringan hitam yang hampir menyerupai tetapi tidak mirip. Perbedaan penting antara track di harddisk dan alur
+                                di piringan hitam adalah bahwa track di harddisk berbentuk bundar dan terpisah. Piringan hitam biasanya hanya mempunyai satu alur, yang berulir dari luar ke bagian tengah. Saat memainkan piringan hitam, jarum berpindah
+                                terus-menerus dari luar ke bagian tengah. Tatkala membaca atau menulis data di harddisk, head tetap ada. Head hanya berpindah ketika anda bergerak dari satu track ke track lain lalu pemindahan head terjadi antara ledakan
+                                membaca atau menulis.<br /> Track dengan angka sama (semua track di seluruh permukaan untuk satu posisi head assembly) membentuk apa yang disebut cylinder. Jumlah cylinder (atau track per piringannya) yang dimiliki harddisk
+                                tertentu tergantung pada lebar sempitnya track dan pada ukuran track, untuk melacak operasi yang dilakukan head aktuator. Harddisk yang sebenarnya memiliki sekitar beberapa ratus hingga beberapa ribu silinder.</div>
+                            <div style="text-align: justify;"><br />
+                            </div>
+                            <div style="text-align: justify;"><b>Produk Hard Drive yang Standar (ST412/ST506)</b>Rancangan model angka ini menggambarkan variasi interface harddisk, mengindikasikan secara rinci bagaimana disk drive dan controllernya berkomunikasi satu sama lain.<br />                                Spesiﬁkasi dari interface ini (atau beberapa) memiliki beberapa aspek. Yang pertama menyangkut deskripsi kabel dimana controller dan drive dapat melakukan komunikasi dan penghubung pada akhir kabel tersebut. Yang berikutnya
+                                adalah elektris, memberikan level tegangan dan tanda waktu untuk tiap kawat. Yang lainnya adalah aspek logis.<br />
+                            </div>
+                            <div style="text-align: justify;">Aplikasi-aplikasi yang umum digunakan dalam manajemen storage.</div>
+                            <div style="text-align: justify;"><br />
+                                <b>fsck</b><br /> fsck digunakan untuk memeriksa dan memperbaiki secara optional satu atau lebih linux ﬁle sistem. fsck ini akan mencoba untuk menjalankan ﬁle sistem pada disk drive ﬁsik yang berbeda secara paralel untuk
+                                mengurangi jumlah waktu yang diperlukan dalam memeriksa semua ﬁle sistem yang ada.<br /> Perintah yang bisa digunakan :<br /> # fsck &lt;nama_dev&gt;<br /> Contoh :<br /> # fsck /dev/hda1<br /> Untuk lebih jelasnya, anda
+                                dapat membaca manual yang tersedia dengan mengetikkan<br /> # man fsck.</div>
+                            <div style="text-align: justify;"><br />
+                                <b>e2fsck</b><br /> Aplikasi yang mirip seperti fsck namun lebih dikhususkan untuk ﬁle sistem yang bertipe extended dua.<br /> Perintah yang bisa digunakan :<br /> # e2fsck &lt;nama_device&gt;<br /> Contoh :<br /> # e2fsck
+                                /dev/hda2
+                                <br /> Seperti biasa, untuk melihat perintah lengkapnya silakan anda ketikkan :<br /> # man e2fsck</div>
+                            <div style="text-align: justify;"><br />
+                                <b>hdparm</b>hdparm merupakan aplikasi yang umum digunakan untuk meningkatkan kinerja harddisk agar dapat bekerja secara optimal. hdparm ini mendukung harddisk IDE/ST 506. Aplikasi ini membutuhkan linux kernel versi 1.2.13
+                                ke atas. Beberapa option tidak bisa bekerja pada kernel-kernel awal. Sebagai tambahan beberapa option didukung hanya untuk kernel yang memasukkan device IDE driver yang baru, seperti versi<br /> 2.0.10 ke atas.<br /> Perintah
+                                yang bisa digunakan :<br /> # hdparm [options] &lt;nama_device&gt;</div>
+                            <div style="text-align: justify;"><br /> Keterangan untuk option-optionnya dapat anda baca dari manual hdparm.<br /> Di bawah ini merupakan beberapa contoh yang umum digunakan :<br /> Melihat status 32 Bit I/O :<br /> # hdparm -c /dev/hda<br /> Untuk mengetahui
+                                kecepatan akses disk anda<br /> # hdparm -t /dev/had<br /> Untuk menset hardisk anda yang 16 bit menjadi 32 Bit dan mendukung DMA<br /> # hdparm -c1 -d1 /dev/had<br /> Untuk menjaga agar settingan di atas tetap berlangsung,
+                                gunakan perintah :<br /> # hdparm -k1 /dev/hdaAdministrasi sistem Linux 15</div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="manage-io" id="manage-io">
+        <div class="container materi">
+            <div class="row">
+                <div class="col">
+                    <div class="materi-so">
+                        <ul>
+                            <li>
+                                <b><u> Management Sistem I/O ( Input Output )</u></b>
+                            </li><br>
+                            <p style="text-align:justify;"><strong>Manajemen Sistem M/K ( <em>I/O</em>)</strong></p>
+                            <p style="text-align:justify;">Pekerjaan utama yang paling sering dilakukan oleh sistem komputer selain melakukan komputasi adalah Masukan/Keluaran (M/K). Dalam kenyataannya, waktu yang digunakan untuk komputasi lebih sedikit dibandingkan waktu untuk M/K.
+                                Ditambah lagi dengan banyaknya variasi perangkat M/K sehingga membuat manajemen M/K menjadi komponen yang penting bagi sebuah sistem operasi. Sistem operasi juga sering disebut <em>device manager</em>, karena sistem operasi
+                                mengatur berbagai macam perangkat ( <em>device</em>).</p>
+                            <p style="text-align:justify;">Fungsi-fungsi sistem operasi untuk sistem M/K:</p>
+                            <ul style="text-align:justify;">
+                                <li><strong>Penyanggaan ( <em>buffering</em>). </strong>Menampung data sementara dari/ke perangkat M/K</li>
+                                <li><strong>Penjadwalan ( <em>scheduling</em>). </strong>Melakukan penjadualan pemakaian M/K sistem supaya lebih efisien.</li>
+                                <li><strong>Spooling. </strong>Meletakkan suatu pekerjaan program pada penyangga, agar setiap perangkat dapat mengaksesnya saat perangkat tersebut siap.</li>
+                                <li><strong>Menyediakan <em>driver</em> perangkat yang umum. </strong> <em>Driver</em> digunakan agar sistem operasi dapat memberi perintah untuk melakukan operasi pada perangkat keras M/K yang umum, seperti <em>optical drive</em>,
+                                    media penyimpanan sekunder, dan layar monitor.</li>
+                                <li><strong>Menyediakan <em>driver</em> perangkat yang khusus. </strong> <em>Driver</em> digunakan agar sistem operasi dapat memberi perintah untuk melakukan operasi pada perangkat keras M/K tertentu, seperti kartu suara, kartu
+                                    grafis, dan <em>motherboard</em></li><br>
+                                <h4 style="text-align:justify;">Manajemen Sistem <em>I/O </em></h3>
+                                    <p style="text-align:justify;">Sering disebut <em>device manager</em>. Menyediakan<em> device driver</em>yang umum sehingga operasi <em>I/O </em>dapat seragam (membuka, membaca, menulis,menutup). Contoh: pengguna menggunakan operasi yang sama untuk
+                                        membaca berkas pada perangkat keras, <em>CD-ROM </em>dan <em>floppy disk </em>.</p>
+                                    <p style="text-align:justify;">Manajemen sistem <em>I/O </em>merupakan aspek perancangan sistem operasi yang terluas disebabkan sangat beragamnya perangkat dan begitu banyaknya aplikasi dari perangkat- perangkat itu.</p>
+                                    <p style="text-align:justify;">Sistem operasi bertanggung jawab dalam aktivitas yang berhubungan dengan manajemen sistem/perangkat<em>I/O</em>:</p>
+                                    <ul style="text-align:justify;">
+                                        <li>Mengirim perintah ke perangkat <em>I/O </em>agar menyediakan layanan.</li>
+                                        <li>Menangani interupsi perangakat <em>I/O </em>.</li>
+                                        <li>Menangani kesalahan pada perangakat <em>I/O</em>.</li>
+                                        <li>Menyediakan antarmuka ke pengguna.</li>
+                                    </ul>
+                                    <p style="text-align:justify;">Ada juga beberapa perangkat keras yang terdapat pada I/O manajemen yaitu :</p>
+                                    <p style="text-align:justify;">1. Pooling</p>
+                                    <ul style="text-align:justify;">
+                                        <li><em>Busy-waiting/ polling</em> adalah ketika <em>host</em> mengalami <em>looping</em> yaitu membaca status register secara terus-menerus sampai status <em>busy</em> di-clear.</li>
+                                        <li>Pada dasarnya <em>polling</em> dapat dikatakan efisien. Akan tetapi polling menjadi tidak efisien ketika setelah berulang-ulang melakukan <em>looping</em>, hanya menemukan sedikit <em>device</em> yang siap untuk
+                                            men-
+                                            <em>service</em>, karena CPU <em>processing</em> yang tersisa belum selesai.</li>
+                                    </ul>
+                                    <p style="text-align:justify;">2. Interupsi</p>
+                                    <p style="text-align:justify;">Mekanisme Dasar Interupsi :</p>
+                                    <ul style="text-align:justify;">
+                                        <li>Ketika CPU mendeteksi bahwa sebuah <em>controller</em> telah mengirimkan sebuah sinyal ke <em>interrupt</em> <em>request line</em> (membangkitkan sebuah interupsi), CPU kemudian menjawab interupsi tersebut (juga
+                                            disebut menangkap interupsi) dengan menyimpan beberapa informasi mengenai <em>state</em> terkini CPU&#8211;contohnya nilai instruksi <em>pointer</em>, dan memanggil <em>interrupt handler</em> agar <em>handler</em>                                            tersebut dapat melayani <em>controller</em> atau alat yang mengirim interupsi tersebut.</li>
+                                        <li>Fitur Tambahan pada Komputer Modern :</li>
+                                        <li>Pada arsitektur komputer modern, tiga fitur disediakan oleh CPU dan <em>interrupt controller</em> (pada perangkat keras) untuk dapat menangani interrupsi dengan lebih bagus. Fitur-fitur ini antara lain adalah kemampuan
+                                            menghambat sebuah proses <em>interrupt handling</em> selama prosesi berada dalam <em>critical state</em>, efisiensi penanganan interupsi sehingga tidak perlu dilakukan polling untuk mencari <em>device</em> yang
+                                            mengirimkan interupsi, dan fitur yang ketiga adalah adanya sebuah konsep <em>multilevel</em> interupsi sedemikian rupa sehingga terdapat prioritas dalam penanganan interupsi (diimplementasikan dengan <em>interrupt priority level system</em>).</li>
+                                    </ul>
+                                    <p style="text-align:justify;">Penyebab Interupsi</p>
+                                    <ul style="text-align:justify;">
+                                        <li>Interupsi dapat disebabkan berbagai hal, antara lain <em>exception, page fault</em>, interupsi yang dikirimkan oleh <em>device controllers</em>, dan <em>system call Exception</em> adalah suatu kondisi dimana terjadi
+                                            sesuatu/ dari sebuah operasi didapat hasil tertentu yang dianggap khusus sehingga harus mendapat perhatian lebih, contoh nya pembagian dengan 0 (nol), pengaksesan alamat memori yang <em>restricted</em> atau
+                                            bahkan tidak valid, dan lain-lain.</li>
+                                        <li><em>System call</em> adalah sebuah fungsi pada aplikasi (perangkat lunak) yang dapat mengeksekusikan instruksi khusus berupa <em>software interrupt</em> atau <em>trap</em>.</li>
+                                    </ul>
+                                    <p style="text-align:justify;">3. DMA</p>
+                                    <ul style="text-align:justify;">
+                                        <li>DMA adalah sebuah prosesor khusus (<em>special purpose processor</em>) yang berguna untuk menghindari pembebanan CPU utama oleh program <em>I/O</em> (PIO).</li>
+                                    </ul>
+                                    <p style="text-align:justify;">4. Handshaking</p>
+                                    <ul style="text-align:justify;">
+                                        <li>Proses <em>handshaking</em> antara DMA <em>controller</em> dan <em>device controller</em> dilakukan melalui sepasang kabel yang disebut DMA-<em>request</em> dan DMA-<em>acknowledge</em>. Device controller mengirimkan
+                                            sinyal melalui DMA-<em>request</em> ketika akan mentransfer data sebanyak satu <em>word</em>. Hal ini kemudian akan mengakibatkan DMA <em>controller</em> memasukkan alamat-alamat yang dinginkan ke kabel alamat
+                                            memori, dan mengirimkan sinyal melalui kabel DMA-<em>acknowledge</em>. Setelah sinyal melalui kabel DMA-<em>acknowledge</em> diterima, <em>device controller</em> mengirimkan data yang dimaksud dan mematikan
+                                            sinyal pada DMA-<em>request</em>.</li>
+                                    </ul>
+                                    <ul style="text-align:justify;">
+                                        <li>Hal ini berlangsung berulang-ulang sehingga disebut <em>handshaking</em>. Pada saat DMA <em>controller</em> mengambil alih memori, CPU sementara tidak dapat mengakses memori (dihalangi), walau pun masih dapat mengaksees
+                                            data pada cache primer dan sekunder. Hal ini disebut <em>cycle stealing</em>, yang walau pun memperlambat komputasi CPU, tidak menurunkan kinerja karena memindahkan pekerjaan data transfer ke DMA <em>controller</em>                                            meningkatkan performa sistem secara keseluruhan.</li>
+                                    </ul>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- akhir materi so -->
+
+
+
+    <!-- Info Tugas -->
+    <section class="info-tugas" id="info-tugas">
+        <div class="container-tugas">
+            <div class="row">
+                <div class="col">
+                    <h3> Tugas Kelompok</h3>
+                    <hr class="sty"><br>
+                    <p>Menginstall OS LINUX pada vmware atau virtualbox dan maksimal 2 orang. <br></p>
+                    <p>Dosen : Ibu Yulianingsih <br>Telepon : 0818400320 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- akhir Info Tugas -->
+
+    <!-- awal comment -->
+    <section class="coment" id="coment">
+        <div class="container">
+
+            <form>
+                <div class="form-row bg-light">
+                    <div class="form-group col-md-5 offset-1">
+                        <label for="inputNama">Nama</label>
+                        <input type="nama" class="form-control" id="inputNama" placeholder="Masukan Nama">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Masukan Email">
+                    </div>
+                    <div class="form-group col-md-10 offset-1  justify-content-center">
+                        <label for="inputKomen">Komentar</label>
+                        <textarea name="inputKomen" id="inputKomen" cols="120" rows="6" class="form-control" placeholder="Masukan Komentar"></textarea><br>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- akhir comment -->
+
+    <!--footer-->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>&copy; 2019 | Created by. <a href="https://www.instagram.com/adam.permadika">My Team Bonzis</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--akhir footer-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

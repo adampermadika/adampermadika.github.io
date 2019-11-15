@@ -1,0 +1,146 @@
+      /*versi mobile*/
+      /*mengatur posisi navbar*/
+                                                
+                                                .navbar {
+                                                    position: relative;
+                                                    z-index: 1;
+                                                }
+                                                /*mengatur tampilan pada class navbar-brand*/
+                                                
+                                                .navbar-brand {
+                                                    font-family: Viga;
+                                                    /*font ngelink ke google font*/
+                                                    font-size: 30px;
+                                                    z-index: 1;
+                                                    margin-top: -1%;
+                                                }
+
+.text-kelas h6{
+  font-family: viga;
+  font-size: 17px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 12%;
+  
+}
+
+                                                /*jumbtron*/
+                                                
+                                                .jumbotron {
+                                                    background-image: url(../img/logo.jpg);
+                                                    background-size: contain;
+                                                    height: 500px;
+                                                    text-align: center;
+                                                    position: relative;
+                                                }
+                                                
+                                                .jumbotron img {
+                                                    margin-top: 3%;
+                                                    border: 2px solid dimgrey;
+                                                    width: 15%;
+                                                }
+                                                /*mengatur tumpukan pada jumbotron class container*/
+                                                
+                                                .jumbotron .container {
+                                                    z-index: 1;
+                                                    position: relative;
+                                                    /*mengatur posisi statis*/
+                                                }
+
+                                                    .jumbotron h2{
+                                                    color: white;
+                                                    text-align: center;
+                                                    font-family: viga;
+                                                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+                                                    font-size: 50px;
+                                                    font-weight: 150;
+                                                    margin-top: 10%;
+}
+
+                                                /*membuat degradasi*/
+                                                
+                                                                                                .jumbotron::after {
+                                                    content: '';
+                                                    display: block;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+                                                    position: absolute;
+                                                    bottom: -5%;
+                                                }
+                                                /*mengatur tampilan pada class jumbotron display-4 */
+                                                
+                                                .jumbotron .display-4 {
+                                                    color: white;
+                                                    text-align: center;
+                                                    font-family: viga;
+                                                    margin-top: 3%;
+                                                    font-weight: 200;
+                                                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+                                                    font-size: 35px;
+                                                    margin-bottom: 30px;
+                                                }
+                                                /* about */
+                                                
+                                                .container .tentang {
+                                                    margin-top: 80px;
+                                                    margin-bottom: 20px;
+                                                    text-align: center;
+                                                }
+                                                
+                                                .tentang hr {
+                                                    width: 120px;
+                                                    border-top: 2px solid #5b32b4;
+                                                }
+                                                
+                                                .tentang-deskripsi {
+                                                    margin-bottom: 120px;
+                                                }
+                                                
+                                                /* Footer */
+                                                
+                                                footer {
+                                                    height: 50px;
+                                                    width: 100%;
+                                                    bottom: 0;
+                                                    background-color: darkgrey;
+                                                    padding-top: 0px;
+                                                }
+                                                
+                                                footer p {
+                                                    color: #eeeeee;
+                                                    font-size: 0.9em;
+                                                    margin-top: 15px;
+                                                }
+                                                /* dexstop versi / ketika dibuka di mobile phone */
+                                                
+                                                @media (min-width: 992px) {
+                                                    .navbar-brand,
+                                                    .nav-link {
+                                                        color: white !important;
+                                                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+                                                        margin-left: 10px;
+                                                    }
+                                                    .nav-link {
+                                                        text-transform: uppercase;
+                                                        margin-right: 10px;
+                                                        font-family: viga;
+                                                    }
+                                                    .nav-link:hover::after {
+                                                        content: '';
+                                                        display: block;
+                                                        border-bottom: 3px solid blue;
+                                                        width: 50%;
+                                                        margin: auto;
+                                                        padding-bottom: 5px;
+                                                        margin-bottom: -8px;
+                                                        ;
+                                                    }
+                                                    .jumbotron {
+                                                        margin-top: -75px;
+                                                        height: 640px;
+                                                    }
+                                                    .jumbotron .display-4 {
+                                                        font-size: 62px;
+                                                         }
+                                                    }
